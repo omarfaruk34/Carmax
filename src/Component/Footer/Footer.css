@@ -1,0 +1,67 @@
+.footer{
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    background-color: #000A14;
+    justify-content: space-between;
+    position: relative;
+}
+.footer:before{
+    position: absolute;
+    content: "";
+    background-image: url('../../../public/footer-car.png');
+    width: 200px;
+    height: 250px;
+    right: 0;
+    top: 230px;
+    background-size: cover;
+    background-position: center;
+}
+.footer:after{
+    position: absolute;
+    content: "";
+    background-image: url('../../../public/car.png');
+    width: 200px;
+    height: 150px;
+    left: 0;
+    top: 230px;
+    background-size: cover;
+    background-position: center;
+}
+.contact{
+    
+}
+.shop-details{
+    width: 550px;
+    
+}
+.contact-us{
+   width: 250px;
+} 
+.about-us{
+    width: 250px;
+   
+}
+.support{
+    width: 250px;
+   
+}
+.copyright{
+
+}
+hr{
+    background-color: azure;
+    width: 800px;
+    height: 2px;
+    margin: auto;
+}
+
+.h1weight{
+    font-weight: 400;
+    font-size: 30px;
+}
+.pweight{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    
+}

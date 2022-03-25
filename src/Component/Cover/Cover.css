@@ -1,0 +1,9 @@
+.cover{
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../../../public/cars.png');
+    background-size: cover;
+    background-position: center;
+    width: 1000px;
+    height: 30vh;
+    margin: auto;
+}
