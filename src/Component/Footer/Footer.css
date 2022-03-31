@@ -1,4 +1,5 @@
 .footer{
+    margin: auto;
     font-family: 'Poppins', sans-serif;
     flex-direction: column;
     background-color: #000A14;
@@ -63,5 +64,215 @@ hr{
     font-weight: 300;
     font-size: 18px;
     line-height: 30px;
+    margin-top: 8px;
+    
+}
+
+.h2weight{
+   font-size: 20px;
+   font-weight: 300;
+}
+
+
+
+
+/* Responsive code */
+/* Medium Layout: 1280px. */
+/* Checking Size 1000px */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .footer{
+       width: 970px;
+    }
+    .footer:before{
+        width: 200px;
+        height: 250px;
+        right: 0;
+        top: 230px;
+    }
+    .footer:after{
+        width: 200px;
+        height: 150px;
+        left: 0;
+        top: 230px;
+    }
+    .contact{
+        
+    }
+    .shop-details{
+        width: 550px;
+        
+    }
+    .contact-us{
+       width: 240px;
+    } 
+    .about-us{
+        width: 240px;
+       
+    }
+    .support{
+        width: 240px;
+       
+    }
+    .copyright{
+    
+    }
+    hr{
+        background-color: azure;
+        width: 800px;
+        height: 2px;
+    }
+    
+    .h1weight{
+        font-weight: 400;
+        font-size: 25px;
+    }
+    .pweight{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 8px;
+        
+    }
+    
+    .h2weight{
+       font-size: 20px;
+       font-weight: 300;
+    }
+    
+}
+
+/* Tablet Layout: 768px. */
+/* Checking Size 800px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .footer{
+     width: 750px;
+    }
+    .footer:before{
+        width: 200px;
+        height: 250px;
+        right: 0;
+        top: 230px;
+    }
+    .footer:after{
+        width: 200px;
+        height: 150px;
+        left: 0;
+        top: 230px;
+    }
+    .contact{
+        
+    }
+    .shop-details{
+        width: 550px;
+        
+    }
+    .contact-us{
+       width: 250px;
+    } 
+    .about-us{
+        width: 250px;
+       
+    }
+    .support{
+        width: 250px;
+       
+    }
+    .copyright{
+    
+    }
+    hr{
+        background-color: azure;
+        width: 800px;
+        height: 2px;
+        margin: auto;
+    }
+    
+    .h1weight{
+        font-weight: 400;
+        font-size: 30px;
+    }
+    .pweight{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 8px;
+        
+    }
+    
+    .h2weight{
+       font-size: 20px;
+       font-weight: 300;
+    }
+    
+}
+
+/* Mobile Layout: 320px. */
+/* Checing Point: 400px */
+@media only screen and (max-width: 767px) {
+  
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .footer{
+        width: 450px;
+    }
+    .footer:before{
+        width: 100px;
+        height: 100px;
+        right: 0;
+        top: 720px;
+    }
+    .footer:after{
+        width: 100px;
+        height: 100px;
+        left: 0;
+        top: 720px;
+    }
+    .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+    .shop-details{
+        width: 300px;
+        
+    }
+    .contact-us{
+       width: 250px;
+    } 
+    .about-us{
+        width: 250px;
+       
+    }
+    .support{
+        width: 250px;
+       
+    }
+    .copyright{
+    
+    }
+    hr{
+        background-color: azure;
+        width: 800px;
+        height: 2px;
+        margin: auto;
+    }
+    
+    .h1weight{
+        font-weight: 400;
+        font-size: 30px;
+    }
+    .pweight{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 8px;
+        
+    }
+    
+    .h2weight{
+       font-size: 20px;
+       font-weight: 300;
+    }
     
 }

@@ -1,4 +1,5 @@
 .statContainer{
+    margin: auto;
     margin-top: 20px;
     background-image: url('../../../public/fea.jpg');
     background-size: cover;
@@ -7,6 +8,9 @@
     height: 70vh;
     position: relative;
     z-index: 1;
+}
+.statContainer h2{
+
 }
 .statContainer:before{
     position: absolute;
@@ -26,6 +30,84 @@
 .stat1{
     /* background-color: #333333; */
     border-radius: 10px;
-
-    
 }
+.stat1 h1{
+    font-size: 30px;
+}
+
+
+
+
+
+/* Responsive code */
+/* Medium Layout: 1280px. */
+/* Checking Size 1000px */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .statContainer{
+        height: 480px;
+    }
+    .statContainer h2{
+
+    }
+    .stat{
+        margin-top: 80px;
+    }
+    .stat1{
+        /* background-color: #333333; */
+        border-radius: 10px;  
+    }
+    .stat1 h1{
+        font-size: 28px;
+    }
+}
+
+/* Tablet Layout: 768px. */
+/* Checking Size 800px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .statContainer{
+        height: 380px;
+    }
+    .statContainer h2{
+         font-size: 20px;
+    }
+    .stat{
+        margin-top: 80px;
+    }
+    .stat1 h1{
+        font-size: 23px;
+    }
+}
+
+/* Mobile Layout: 320px. */
+/* Checing Point: 400px */
+@media only screen and (max-width: 767px) {
+    .statContainer{
+        height: 240px;
+    }
+    .statContainer h2{
+         font-size: 15px;
+    }
+    .stat{
+        margin-top: 40px;
+    }
+    .stat1 h1{
+        font-size: 13px;
+    }
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .statContainer{
+        height: 280px;
+    }
+    .statContainer h2{
+         font-size: 18px;
+    }
+    .stat{
+        margin-top: 50px;
+    }
+    .stat1 h1{
+        font-size: 16px;
+    }
+}
+

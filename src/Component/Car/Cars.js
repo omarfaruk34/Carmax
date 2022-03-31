@@ -18,15 +18,15 @@ const Cars = () => {
                    cars?.map(item=>
                     <div key={item?.id} className=" car-item my-3 border rounded shadow"> 
                         
-                        <div className='px-2 py-3 img-thumbnail'><img className='' src={item?.image} width="100%" alt="" />
+                        <div className='image px-2 py-3 img-thumbnail'><img className='' src={item?.image} width="100%" alt="" />
                         
                         </div>
-                        <div className='d-flex justify-content-between bg-black p-3 '>
-                        <div className=''>
-                         <h2 className='text-left text-light font-weight-bold px-3 h1weight'>{item?.title}</h2> 
-                        <p className='text-danger font-weight-light fs-5 mx-3 pweight'>Price: ${item?.price}</p>
+                        <div className='content d-flex justify-content-between bg-black p-3 '>
+                        <div className='content_title'>
+                         <h2 className='text-left text-light font-weight-bold px-1 h1weight'>{item?.title}</h2> 
+                        <p className='text-danger font-weight-light mx-1 pweight'>Price: ${item?.price}</p>
                          </div>
-                         <div className=' buton car-btn'>
+                         <div className='buton car-btn'>
                              <button className='btn btn-danger'>Book Now</button>
                          </div>
                         </div>

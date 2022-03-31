@@ -45,7 +45,7 @@ const Footer = () => {
 <hr />
 
              <div className="copyright text-center text-light p-3">
-                 <h2 className=' h1weight'>Copyright © 2021 CarMax.Designed By <br /><span className='text-danger'>Omar Faruk</span></h2>
+                 <p className='h2weight'>Copyright © 2021 CarMax.Designed By <br /><span className='text-danger'>Omar Faruk</span></p>
                  <p className='text-danger pweight'>Term & Conditions <span className='text-light'>|</span> Privacy Policy</p>
              </div>
 				

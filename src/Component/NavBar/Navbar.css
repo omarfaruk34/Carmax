@@ -6,9 +6,12 @@
 }
 .nav{
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
     
 }
-.nav button{
+.navbtn button{
     color: #fff;
     font-size: 17px;
     display: inline-block;
@@ -35,6 +38,7 @@
 }
 .nav button:hover:after{
     left: 0;
+    
 }
 .navbar ul li a{
     position: relative;
@@ -58,4 +62,146 @@
 }
 .navbar ul li a:hover:before{
     bottom: -4px;
+}
+
+
+
+/* responsive code */
+
+/* Medium Layout: 1280px. */
+/* Checking Size 1000px */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+ .nav{
+     width: 972px;
+    
+ }
+ .logo{
+     width: 972PX;
+     text-align: center;
+ }
+ .navbar{
+        width: 600px;
+    }
+    .navbar ul li a{
+    }
+.navbar ul li a:before{ 
+        left: 0;
+        bottom: 190px;
+    }
+    .navbar ul li a:hover:before{
+        bottom: -14px;
+    }
+    
+ 
+}
+
+/* Tablet Layout: 768px. */
+/* Checking Size 800px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .nav{
+        width: 750px;
+        
+       
+    }
+    .logo{
+        width: 750PX;
+        text-align: center;
+    }
+    .navbar{
+           width: 450px;
+       }
+       .navbar ul li a{
+           font-size: 14px;
+    
+       }
+   .navbar ul li a:before{ 
+           left: 0;
+           bottom: 190px;
+       }
+       .navbar ul li a:hover:before{
+           bottom: -12px;
+       }
+       .navbtn button{
+           font-size: 13px;
+           border-radius: 15px;
+       }
+}
+
+/* Mobile Layout: 320px. */
+/* Checing Point: 400px */
+@media only screen and (max-width: 767px) {
+    .nav{
+        width: 320px;
+        
+       
+    }
+    .logo{
+        width: 320PX;
+        text-align: center;
+    }
+    .navbar{
+           width: 320px;
+       }
+       .navbar ul li a{
+           font-size: 14px;
+    
+       }
+   .navbar ul li a:before{ 
+           left: 0;
+           bottom: 190px;
+       }
+       .navbar ul li a:hover:before{
+           bottom: -12px;
+       }
+       .navbtn button{
+           font-size: 13px;
+           border-radius: 15px;
+       }
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .nav{
+        width: 450px;   
+    }
+    .logo{
+        width: 410PX;
+        text-align: center;
+    }
+    .navbar {
+        width: 450px;
+        justify-content: center;
+        background-color: #0a1520;
+        color: #fff;
+    }
+       .navbar ul{
+           flex-direction: column;
+           left: -10px;
+       }
+       .navbar ul li{
+           align-self: center;
+           justify-content: center;
+           
+       }
+       .navbar ul li a{
+        
+           font-size: 14px;
+           padding: 10px 20px;
+    
+       }
+   .navbar ul li a:before{ 
+           height: 1px;
+           left: 13px;
+           bottom: 190px;
+           background-color: #fff;
+       }
+       .navbar ul li a:hover:before{
+           bottom: 6px;
+       }
+       .navbtn button{
+           top: -200px;
+           left: -34px;
+           font-size: 13px;
+           border-radius: 15px;
+       }
 }

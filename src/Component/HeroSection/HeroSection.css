@@ -1,14 +1,11 @@
 .hero-container{
     font-family: 'Poppins', sans-serif;
     background-image: url('../../../public/slider-banner.jpg');
-    /* background-image: url('https://i.ibb.co/xg6Cgpc/carmax-banner.jpg'); */
+    margin: auto;
     background-repeat: no-repeat;
     min-height: 85vh;
     background-size: cover;
     background-position: center;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     flex-direction: column;
 
     position: relative;
@@ -29,11 +26,22 @@
       top: 173px;
       transition: .5s;
       z-index: -1;
+      animation-name: audi;
+      animation-duration: 2s;
+      animation-direction: normal;
+      animation-timing-function: linear;
+      /* animation-delay: 2s; */
+      animation-fill-mode: forwards;
 
 }
-.hero-container:hover:after{
-    right: 0;
+@keyframes audi{
+    to{
+        right: 0;
+    }
 }
+/* .hero-container:hover:after{
+    right: 0;
+} */
 /* .hero-container:before{
    position: absolute;
 
@@ -52,7 +60,7 @@
 }
 .hero-container button{
     color: #fff;
-    font-size: 17px;
+    font-size: 19px;
     display: inline-block;
     /* width: 200px; */
     margin: auto;
@@ -87,4 +95,136 @@
     font-weight: 300;
     font-size: 18px;
     line-height: 10px;
+}
+
+
+
+
+
+
+/* Responsive code */
+/* Medium Layout: 1280px. */
+/* Checking Size 1000px */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .hero-container{
+        min-height: 500px;
+        width: 970px;
+        
+    }
+    .hero-container:after{
+          width: 450px;
+          height: 170px;
+          right:-772px;
+          top: 230px;
+    }
+    */
+    .hero-container h1{
+        padding-top: 50px;
+        font-size: 26px;
+    }
+    .hero-container h2{
+    font-size: 30px;
+    }
+    .hero-container p{
+     font-size: 16px;
+    }
+    .hero-container button{
+        padding: 10px;
+    }
+}
+
+/* Tablet Layout: 768px. */
+/* Checking Size 800px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .hero-container{
+        min-height: 380px;
+        width: 750px;
+        
+    }
+    .hero-container:after{
+          width: 300px;
+          height: 110px;
+          right:-770px;
+          top: 190px;
+    }
+    .hero-container h1{
+        padding-top: 55px;
+        font-size: 20px;
+    }
+    .hero-container h2{
+    font-size: 22px;
+    }
+    .hero-container p{
+     font-size: 13px;
+     line-height: 23px;
+    }
+    .hero-container button{
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+/* Mobile Layout: 320px. */
+/* Checing Point: 400px */
+@media only screen and (max-width: 767px) {
+    .hero-container{
+        min-height: 150px;
+        width: 320px;
+    
+    }
+    .hero-container:after{
+          width: 120px;
+          height: 45px;
+          right:-770px;
+          top: 100px;
+    }
+    .hero-container h1{
+        padding-top: 25px;
+        font-size: 10px;
+    }
+    .hero-container h2{
+    font-size: 10px;
+    }
+    .hero-container p{
+     font-size: 5px;
+     line-height: 10px;
+    }
+    .hero-container button{
+        padding: 10px;
+        font-size: 5px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .hero-container{
+        min-height: 150px;  
+        width: 450px; 
+        margin: auto;
+    }
+    .hero-container:after{
+          width: 160px;
+          height: 55px;
+          right:-770px;
+          top: 110px;
+    }
+    .hero-container h1{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .hero-container h2{
+    font-size: 13px;
+
+    }
+    .hero-container p{
+     font-size: 10px;
+     line-height: 17px;
+    
+    }
+    .hero-container button{
+        padding: 8px;
+        font-size: 5px;
+        margin-bottom: 14px;
+    }
 }

@@ -3,7 +3,7 @@ import "./Contact.css"
 const Contact = () => {
     return (
         <div className='form-container '>
-            <h1 className='text-center text-muted mt-5'>If You Have Any Question <br /><span className='text-green'>Drop A Message</span></h1>
+            <h1 className='text-muted'>If You Have Any Question <br /><span className='text-green'>Drop A Message</span></h1>
             <div className="form-box mt-5">
                 <form action="">
                      <div className="row">
