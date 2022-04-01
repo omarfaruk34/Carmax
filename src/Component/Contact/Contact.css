@@ -49,19 +49,9 @@
     z-index: 2;
     overflow: hidden;
 }
-.sub-btn input:before{
-    position: absolute;
-    content: " ";
-    width: 100%;
-    height: 100%;
-    left: -100%;
-    top: 0;
-    background-color: #333;
-    transition: .3s;
-    z-index: -1;
-}
-.sub-btn input:hover:before{
-    left: 0;
+.sub-btn input:hover{
+    color: #333;
+    border: 3px ridge #0a0a0a;
 }
 
  .text-green{

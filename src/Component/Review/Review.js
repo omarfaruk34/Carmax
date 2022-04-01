@@ -11,7 +11,7 @@ const Review = () => {
 
    <div className='review bg-white py-5'>
  
-            <div className="review1 mx-5 p-3 shadow">
+            <div className="review1 shadow">
                  <div className="review1_1">
                     
                  </div>
@@ -21,7 +21,7 @@ const Review = () => {
                  </div>
             </div>
 
-            <div className="review1 mx-2 p-3 shadow">
+            <div className="review1 shadow">
             <div className="review1_2">
 
             </div>
@@ -32,7 +32,7 @@ const Review = () => {
                  </div>
             </div>
 
-            <div className="review1 mx-5 p-3 shadow">
+            <div className="review1 shadow">
             <div className="review1_3">
 
               </div>

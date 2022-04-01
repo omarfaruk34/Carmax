@@ -44,6 +44,7 @@
 /* Checking Size 1000px */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .statContainer{
+        width: 970px;
         height: 480px;
     }
     .statContainer h2{
@@ -66,7 +67,7 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .statContainer{
         height: 380px;
-        width: 320px;
+        width: 750px;
     }
     .statContainer:before{
         width: 100%;
@@ -89,6 +90,7 @@
 @media only screen and (max-width: 767px) {
     .statContainer{
         width: 320px;
+        height: 270px;
 
     }
     .statContainer h2{
@@ -105,6 +107,7 @@
 /* Wide Mobile Layout: 480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .statContainer{
+        width: 450px;
         height: 280px;
     }
     .statContainer h2{

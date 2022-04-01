@@ -290,11 +290,11 @@
    line-height: 20px;
 }
 
-.icon{
-   font-size: 22px;
-   height: 90px;
-   line-height: 90px;
-   width: 100px;
+.icon {
+   font-size: 25px;
+   height: 55px;
+   line-height: 50px;
+   width: 60px;
 }
 
 }
@@ -351,12 +351,11 @@
    line-height: 17px;
 }
 
-.icon{
+.icon {
    font-size: 25px;
-   height: 60px;
-   line-height: 90px;
+   height: 55px;
+   line-height: 50px;
    width: 60px;
-
 }
 
 }

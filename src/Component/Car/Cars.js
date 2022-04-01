@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react';
+import {AiFillStar} from "react-icons/ai"
+
 import "./Cars.css"
 
 const Cars = () => {
@@ -25,6 +27,7 @@ const Cars = () => {
                         <div className='content_title'>
                          <h2 className='text-left text-light font-weight-bold px-1 h1weight'>{item?.title}</h2> 
                         <p className='text-danger font-weight-light mx-1 pweight'>Price: ${item?.price}</p>
+                        <h4 className='text-light fs-5'>Rating: <AiFillStar/>{item?.rating}</h4>
                          </div>
                          <div className='buton car-btn'>
                              <button className='btn btn-danger'>Book Now</button>
