@@ -2,7 +2,7 @@ import React from 'react';
 import "./Navbar.css"
 const NavBar = () => {
     return (
-        <div className=' mx-2 my-2 nav'>
+        <div className='nav'>
 				<div className="">
                     <h1 className='text-danger mx-5 pt-2 logo'>Car<span className='text-dark'>Max</span></h1>
                    {/* <img src="\..\..\..\carmax-logo.png" alt="" /> */}

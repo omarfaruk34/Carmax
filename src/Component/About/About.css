@@ -244,7 +244,7 @@
 @media only screen and (max-width: 767px) {
      
 .about{
-    width: 320px;
+    width: 350px;
 }
 .about::before{
     width: 140px;
@@ -268,11 +268,11 @@
    width: 100px;
    height: 45px;
    margin-top: 90px;
-   margin-left: 40px;
+   margin-left: 50px;
 }
 
 .content1_1{
-  width: 200px;
+  width: 180px;
  
 }
 .content1_1 h1{

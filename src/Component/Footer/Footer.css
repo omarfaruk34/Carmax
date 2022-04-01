@@ -33,6 +33,7 @@
 }
 .shop-details{
     width: 550px;
+    margin-right: 10px;
     
 }
 .contact-us{
@@ -56,19 +57,23 @@ hr{
     margin: auto;
 }
 
-.h1weight{
+.shop-details h1{
     font-weight: 400;
     font-size: 30px;
 }
-.pweight{
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-    margin-top: 8px;
-    
+.contact-us h1{
+    font-weight: 400;
+    font-size: 30px;
 }
-
-.h2weight{
+.about-us h1{
+    font-weight: 400;
+    font-size: 30px;
+}
+.support h1{
+    font-weight: 400;
+    font-size: 30px;
+}
+.copyright p{
    font-size: 20px;
    font-weight: 300;
 }
@@ -167,6 +172,70 @@ hr{
         
     }
     .contact-us{
+       width: 200px;
+    } 
+    .about-us{
+        width: 200px;
+        margin-right: 10px;
+       
+    }
+    .support{
+        width: 200px;
+       
+    }
+    .copyright{
+    
+    }
+    hr{
+        width: 400px;
+    }
+    
+    .shop-details h1{
+        font-size: 22px;
+    }
+    .contact-us h1{
+        font-size: 22px;
+    }
+    .about-us h1{
+        font-size: 22px;
+    }
+    .support h1{
+        font-size: 22px;
+    }
+    .copyright p{
+       font-size: 15px;
+    }
+    
+}
+
+/* Mobile Layout: 320px. */
+/* Checing Point: 400px */
+@media only screen and (max-width: 767px) {
+    .footer{
+        width: 350px;
+    }
+    .footer:before{
+        width: 100px;
+        height: 100px;
+        right: 0;
+        top: 720px;
+    }
+    .footer:after{
+        width: 100px;
+        height: 100px;
+        left: 0;
+        top: 720px;
+    }
+    .contact{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .shop-details{
+        width: 300px;
+        
+    }
+    .contact-us{
        width: 250px;
     } 
     .about-us{
@@ -181,35 +250,24 @@ hr{
     
     }
     hr{
-        background-color: azure;
-        width: 800px;
-        height: 2px;
-        margin: auto;
+        width: 200px;
     }
     
-    .h1weight{
-        font-weight: 400;
-        font-size: 30px;
+    .shop-details h1{
+        font-size: 25px;
     }
-    .pweight{
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 30px;
-        margin-top: 8px;
-        
+    .contact-us h1{
+        font-size: 16px;
     }
-    
-    .h2weight{
-       font-size: 20px;
-       font-weight: 300;
+    .about-us h1{
+        font-size: 16px;
     }
-    
-}
-
-/* Mobile Layout: 320px. */
-/* Checing Point: 400px */
-@media only screen and (max-width: 767px) {
-  
+    .support h1{
+        font-size: 16px;
+    }
+    .copyright p{
+       font-size: 8px;
+    }
 }
 
 /* Wide Mobile Layout: 480px. */
@@ -252,27 +310,23 @@ hr{
     
     }
     hr{
-        background-color: azure;
-        width: 800px;
-        height: 2px;
-        margin: auto;
+        width: 200px;
     }
     
-    .h1weight{
-        font-weight: 400;
-        font-size: 30px;
+    .shop-details h1{
+        font-size: 25px;
     }
-    .pweight{
-        font-weight: 300;
+    .contact-us h1{
         font-size: 18px;
-        line-height: 30px;
-        margin-top: 8px;
-        
     }
-    
-    .h2weight{
-       font-size: 20px;
-       font-weight: 300;
+    .about-us h1{
+        font-size: 18px;
+    }
+    .support h1{
+        font-size: 18px;
+    }
+    .copyright p{
+       font-size: 10px;
     }
     
 }

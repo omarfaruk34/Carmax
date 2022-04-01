@@ -5,10 +5,11 @@
     font-weight: 700;
 }
 .nav{
+    margin: auto;
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: space-between;
-    margin: auto;
+    margin-top: 10px;
     
 }
 .navbtn button{
@@ -141,6 +142,7 @@
     }
     .navbar{
            width: 320px;
+           background-color:#0a1520;
        }
        .navbar ul li a{
            font-size: 14px;
@@ -179,27 +181,23 @@
            left: -10px;
        }
        .navbar ul li{
-           align-self: center;
+           display: block;
+           text-align: center;
            justify-content: center;
+           background-color: #fff;
+           width: 400px;
+           margin-bottom: 5px;
+           border-radius: 10px;
            
        }
        .navbar ul li a{
-        
+           display: block;
            font-size: 14px;
            padding: 10px 20px;
     
        }
-   .navbar ul li a:before{ 
-           height: 1px;
-           left: 13px;
-           bottom: 190px;
-           background-color: #fff;
-       }
-       .navbar ul li a:hover:before{
-           bottom: 6px;
-       }
        .navbtn button{
-           top: -200px;
+           top: -287px;
            left: -34px;
            font-size: 13px;
            border-radius: 15px;

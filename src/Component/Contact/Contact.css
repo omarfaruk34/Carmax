@@ -110,10 +110,10 @@
         padding: 30px 25px;     
     }
     .form-container::before{
-        width: 200px;
-        height: 230px;
+        width: 140px;
+        height: 165px;
         right: 0;
-        top: 0;
+        top: 0px;
     }
     .sub-btn input{ 
         font-size: 20px;
