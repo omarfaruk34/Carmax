@@ -136,11 +136,16 @@
         
        
     }
-    .logo{
-        width: 320PX;
+    .logobar{
+        order: 2;
+        width: 170PX;
         text-align: center;
     }
+    .logo{
+
+    }
     .navbar{
+        order: 3;
            width: 320px;
            background-color:#0a1520;
        }
@@ -155,6 +160,9 @@
        .navbar ul li a:hover:before{
            bottom: -12px;
        }
+       .navbtn{
+           order: 1;
+       }
        .navbtn button{
            font-size: 13px;
            border-radius: 15px;
@@ -166,12 +174,18 @@
     .nav{
         width: 450px;   
     }
-    .logo{
-        width: 410PX;
+    .logobar{
+        order: 2;
+        width: 210PX;
         text-align: center;
     }
+    .logo{
+
+    }
     .navbar {
+        order: 3;
         width: 450px;
+        margin-bottom: 15px;
         justify-content: center;
         background-color: #0a1520;
         color: #fff;
@@ -196,9 +210,12 @@
            padding: 10px 20px;
     
        }
+       .navbtn{
+           order: 2;
+       }
        .navbtn button{
-           top: -287px;
-           left: -34px;
+           /* top: -287px;
+           left: -34px; */
            font-size: 13px;
            border-radius: 15px;
        }

@@ -3,7 +3,7 @@ import "./Navbar.css"
 const NavBar = () => {
     return (
         <div className='nav'>
-				<div className="">
+				<div className="logobar">
                     <h1 className='text-danger mx-5 pt-2 logo'>Car<span className='text-dark'>Max</span></h1>
                    {/* <img src="\..\..\..\carmax-logo.png" alt="" /> */}
                 </div>
