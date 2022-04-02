@@ -175,7 +175,14 @@
     .car{
         width: 320px;
     }
-    .car-box{
+    .car h2{
+        font-size: 20px;
+    }
+    .car h2::before{
+        width: 70px;
+    }
+    .car h2::after{
+        width: 50px;
     }
     .car-item{
         width: 90%;

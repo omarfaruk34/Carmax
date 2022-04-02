@@ -121,21 +121,21 @@
 /* Checing Point: 400px */
 @media only screen and (max-width: 767px) {
     .form-container{
-        width: 350px;
+        width: 330px;
         padding: 30px 25px;     
     }
     .form-container h1{
-        font-size: 20px;
+        font-size: 17px;
         text-align: start;
     }
     .form-container::before{
-        width: 130px;
-        height: 160px;
+        width: 70px;
+        height: 100px;
         right: 0;
-        top: 0px;
+        top: 10px;
     }
     .sub-btn input{ 
-        font-size: 20px;
+        font-size: 14px;
         padding: 15px 30px;
     }
     .sub-btn input:before{

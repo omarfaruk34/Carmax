@@ -216,36 +216,39 @@
         flex-direction: column;
     }
     .review1{
-        width: 90%;
+        width: 80%;
         margin-bottom: 30px;
     }
     .review1_1{
-        width: 120px;
+        width: 80px;
+        height: 70px;
     }
     .review1_2{
-        width: 120px;
+        width: 80px;
+        height: 70px;
         
     }
     .review1_3{
-        width: 120px;
+        width: 80px;
+        height: 70px;
     }
     .review1_1:before{
-        width: 150px;
-        height: 150px;
-        left: -50px;
+        width: 100px;
+        height: 100px;
+        left: -40px;
         top: 50px;
     }
     .review1_2:before{
-      width: 150px;
-      height: 150px;
-      left: -50px;
-      top: 50px;
+        width: 100px;
+        height: 100px;
+        left: -40px;
+        top: 50px;
     }
     .review1_3:before{
-      width: 150px;
-      height: 150px;
-      left: -50px;
-      top: 50px;
+        width: 100px;
+        height: 100px;
+        left: -40px;
+        top: 50px;
     }
     
     
@@ -255,7 +258,7 @@
     .reviewrcont{
         font-size: 16px;
         line-height: 16px;
-        padding: 18px;
+        padding: 13px;
     
     }
 }
@@ -267,8 +270,8 @@
         flex-direction: column;
     }
     .review1{
-        width: 90%;
-        margin-bottom: 30px;
+        width: 85%;
+        margin-bottom: 40px;
     }
     .review1_1{
         width: 120px;
@@ -281,21 +284,21 @@
         width: 120px;
     }
     .review1_1:before{
-        width: 150px;
-        height: 150px;
-        left: -50px;
+        width: 120px;
+        height: 120px;
+        left: -40px;
         top: 50px;
     }
     .review1_2:before{
-      width: 150px;
-      height: 150px;
-      left: -50px;
+      width: 120px;
+      height: 120px;
+      left: -40px;
       top: 50px;
     }
     .review1_3:before{
-      width: 150px;
-      height: 150px;
-      left: -50px;
+      width: 120px;
+      height: 120px;
+      left: -40px;
       top: 50px;
     }
     

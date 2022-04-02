@@ -18,8 +18,8 @@ const Footer = () => {
                  <div className="contact-us text-light">
                      <h1>Con<span className='text-danger'>tact</span></h1>
                  <ul className='list-unstyled text-muted'>
-                          <li> <span className='text-light'><BsFillPhoneFill/></span> Phone <br />11-55-777-88</li> <br />
-                          <li><span className='text-light'><AiTwotoneMail/></span> Email <br />travel@go.com</li> <br />
+                          <li> <span className='text-light'><BsFillPhoneFill/></span> Phone <br />11-55-777-88</li> 
+                          <li><span className='text-light'><AiTwotoneMail/></span> Email <br />travel@go.com</li>
                           <li> <span className='text-light'><FaLocationArrow/></span> Address <br />123, Paltan, Dhaka</li>
                       </ul>
                  </div>

@@ -81,6 +81,7 @@ hr{
 
 
 
+
 /* Responsive code */
 /* Medium Layout: 1280px. */
 /* Checking Size 1000px */
@@ -218,33 +219,28 @@ hr{
         width: 100px;
         height: 100px;
         right: 0;
-        top: 720px;
+        top: 170px;
     }
     .footer:after{
         width: 100px;
         height: 100px;
         left: 0;
-        top: 720px;
+        top: 170px;
     }
     .contact{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        flex-basis: 20%;
+        justify-content: space-evenly;
     }
-    .shop-details{
-        width: 300px;
-        
-    }
-    .contact-us{
-       width: 250px;
+   
+    .contact-us ul li{
+        font-size: 5px;   
+    
     } 
-    .about-us{
-        width: 250px;
-       
+    .about-us ul li{
+        font-size: 5px;   
     }
-    .support{
-        width: 250px;
-       
+    .support ul li{
+        font-size: 5px;   
     }
     .copyright{
     
@@ -254,19 +250,22 @@ hr{
     }
     
     .shop-details h1{
-        font-size: 25px;
+        font-size: 15px;
+    }
+    .shop-details p{
+        font-size: 6px;
     }
     .contact-us h1{
-        font-size: 16px;
+        font-size: 10px;
     }
     .about-us h1{
-        font-size: 16px;
+        font-size: 10px;
     }
     .support h1{
-        font-size: 16px;
+        font-size: 10px;
     }
     .copyright p{
-       font-size: 8px;
+       font-size: 5px;
     }
 }
 
@@ -279,17 +278,28 @@ hr{
         width: 100px;
         height: 100px;
         right: 0;
-        top: 720px;
+        top: 170px;
     }
     .footer:after{
         width: 100px;
         height: 100px;
         left: 0;
-        top: 720px;
+        top: 170px;
     }
     .contact{
-        flex-direction: column;
-        align-items: center;
+        flex-basis: 20%;
+        justify-content: space-evenly;
+    }
+   
+    .contact-us ul li{
+        font-size: 10px;   
+    
+    } 
+    .about-us ul li{
+        font-size: 10px;   
+    }
+    .support ul li{
+        font-size: 10px;   
     }
     .shop-details{
         width: 300px;

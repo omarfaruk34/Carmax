@@ -168,18 +168,19 @@
 /* Checing Point: 400px */
 @media only screen and (max-width: 767px) {
     .hero-container{
-        min-height: 150px;
+        /* min-height: 100px; */
+        min-height: 20vh;
         width: 320px;
     
     }
     .hero-container:after{
           width: 120px;
           height: 45px;
-          right:-770px;
+          right:-780px;
           top: 100px;
     }
     .hero-container h1{
-        padding-top: 25px;
+        padding-top: 15px;
         font-size: 10px;
     }
     .hero-container h2{
