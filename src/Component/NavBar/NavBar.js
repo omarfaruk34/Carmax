@@ -1,18 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./Navbar.css"
 const NavBar = () => {
     return (
         <div className='nav'>
 				<div className="logobar">
-                    <h1 className='text-danger mx-5 pt-2 logo'>Car<span className='text-dark'>Max</span></h1>
+                    <h1 className='mx-5 pt-2 logo'><Link to={"/"}> <span className='text-danger'>Car</span><span className='text-dark'>Max</span></Link></h1>
                    {/* <img src="\..\..\..\carmax-logo.png" alt="" /> */}
                 </div>
                 <div className="navbar">
-                    <ul className='list-unstyled d-flex pt-3'>
-                        <li className='mx-3'><a href="" className='text-decoration-none text-muted'>Home</a></li>
-                        <li className='mx-3'><a href="" className='text-decoration-none text-muted'>Cars</a></li>
-                        <li className='mx-3'><a href="" className='text-decoration-none text-muted'>About Us</a></li>
-                        <li className='mx-3'><a href="" className='text-decoration-none text-muted'>Contact Us</a></li>
+                    <ul className='list-unstyled d-flex pt-3 demo'>
+                        <li className='mx-3 text-decoration-none text-muted'><Link to={"/"}>Home</Link></li>
+                        <li className='mx-3'><Link to={"/cars"}>Cars</Link></li>
+                        <li className='mx-3'><Link to={"/about"}>About Us</Link></li>
+                        <li className='mx-3'><Link to={"/contact"}>Contact Us</Link></li>
                     </ul>
                 </div>
                 <div className="navbtn btn buttom mx-4">
