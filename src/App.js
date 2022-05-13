@@ -2,6 +2,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Component/About/About';
+import Cardetails from './Component/Cardetails/Cardetails';
 import Cars from './Component/Cars/Cars';
 import Contact from './Component/Contact/Contact';
 import Cover from './Component/Cover/Cover-car';
@@ -22,6 +23,7 @@ function App() {
        <Route path="/about" element={<About/>} />
        <Route path="/cars" element={<Cars/>} />
        <Route path="/contact" element={<Contact/>} />
+       <Route path="/cars/:carId" element={<Cardetails/>} />
      </Routes>
      <Footer/>
      </BrowserRouter>

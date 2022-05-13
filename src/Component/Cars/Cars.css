@@ -97,8 +97,24 @@
     font-size: 20px;
 }
 
-
-
+.form-contain {
+    width: 500px;
+    margin: auto;
+}
+form input[type="submit"] {
+    width: 150px;
+    padding: 4px 0;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: #DC3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: .3s;
+}
+form input[type="submit"]:hover {
+   background-color: #0a1520;
+}
 
 
 /* Responsive code */
@@ -234,3 +250,6 @@
     font-size: 16px;
 }
 }
+
+
+

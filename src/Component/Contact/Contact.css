@@ -21,10 +21,10 @@
     background-image: url('../../../public/contact.png');
     background-size: cover;
     background-position: center;
-    width: 200px;
-    height: 230px;
+    width: 126px;
+    height: 140px;
     right: 0;
-    top: 0;
+    top: 10px;
 }
 .sub-btn input{
     /* display: inline-block;
