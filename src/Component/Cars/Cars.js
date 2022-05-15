@@ -21,7 +21,7 @@ const Cars = () => {
     const [priceTo, setPriceTo] = useState(0)
     const [fuel, setFuel] = useState("")
     useEffect(() => {
-        fetch('./file.json')
+        fetch('/file.json')
         .then(res=> res.json())
         .then(data=>{
             setCars(data)
@@ -54,32 +54,45 @@ const handleSubmit = (e) =>{
     e.preventDefault();
     
     console.log(name,fuel,priceFrom)
-    if(name !== "" || fuel !== "" || priceFrom !== "" || priceTo !== ""){
-        let data = cars.filter(car => car.title.toLowerCase().includes(name.toLowerCase()) && car.fuel.toLowerCase().includes(fuel.toLowerCase()) && parseInt(priceFrom) <= parseInt(car.price) && parseInt(priceTo) >= parseInt(car.price));
-        // console.log(data)
-        setFilterData(data);
-    }
+    // if(name !== "" || fuel !== "" || priceFrom !== "" || priceTo !== ""){
+    //     let data = cars.filter(car => car.title.toLowerCase().includes(name.toLowerCase()) && car.fuel.toLowerCase().includes(fuel.toLowerCase()) && parseInt(priceFrom) <= parseInt(car.price) && parseInt(priceTo) >= parseInt(car.price));
+    //     // console.log(data)
+    //     setFilterData(data);
+    // }
+    console.log(cars);
 }
 
     return (
        <div className='car'>
            <h4 className='text-center pt-5 text-danger pweight'>Popular Cars</h4>
            <h2 className='car text-center my-5 text-muted h1weight'>Most <span className='text-danger'>Popular</span> Cars<br /> In Our Shop</h2>
-         <div className="form-contain">
+        
          <form onSubmit={handleSubmit}>
-            <input className='col-xl-6 my-2 form-control' type="text" onChange={e=> setName(e.target.value)} placeholder="Search by Name" /> 
+         <div className="form-contain row">
+                        <div className="col-xl-12 my-1 bg">
+                             <input type="text" className='form-control' placeholder='Your Brand Name Here' onChange={e=> setName(e.target.value)} />
+                         </div>
             {/* <input type="text" placeholder="Search by " onChange={e=> setName(e.target.value)}/> <br/> */}
-            <select className='col-xl-6 my-2 form-control' name="" id="" onChange={e=> setFuel(e.target.value)}>
+            <div className="col-xl-12 my-1 bg">
+            <label htmlFor="" className='mx-2 text-primary font-weight-bold'>Fuel:</label><select className='col-xl-10 mx-2 px-2 py-1' name="" id="" onChange={e=> setFuel(e.target.value)}>
                 <option value="">select option</option>
                 <option value="petrol">petrol</option>
                 <option value="diesel">diesel</option>
                 <option value="cng">cng</option>
             </select>
-            <input type="text" className='col-xl-6 my-2 form-control' placeholder="Search by Price from" onChange={e=> setPriceFrom(e.target.value)}/>
-            <input type="text"  className='col-xl-6 my-2 form-control' placeholder="Search by Price to" onChange={e=> setPriceTo(e.target.value)}/>
-            <input type="submit" value="search" />
+                         </div>
+                         <div className="col-xl-6 my-1 bg">
+                         <input type="text" className='my-1 form-control' placeholder="Search by Price from" onChange={e=> setPriceFrom(e.target.value)}/>
+                         </div>
+                         <div className="col-xl-6 my-1 bg">
+            <input type="text"  className='my-1 form-control' placeholder="Search by Price to" onChange={e=> setPriceTo(e.target.value)}/>
+                         </div>
+                         <div className="col-xl-12 ">
+                         <input type="submit" className='rounded' value="search"/>
+                         </div>
+            </div>
             </form>
-         </div>
+         
            <div className='car-box d-flex flex-wrap'>
                {
                    filterData?.map(item=> <Car key={item.id} demo={item}/>)

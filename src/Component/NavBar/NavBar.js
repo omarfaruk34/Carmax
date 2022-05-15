@@ -12,12 +12,13 @@ const NavBar = () => {
                     <ul className='list-unstyled d-flex pt-3 demo'>
                         <li className='mx-3 text-decoration-none text-muted'><Link to={"/"}>Home</Link></li>
                         <li className='mx-3'><Link to={"/cars"}>Cars</Link></li>
-                        <li className='mx-3'><Link to={"/about"}>About Us</Link></li>
-                        <li className='mx-3'><Link to={"/contact"}>Contact Us</Link></li>
+                        <li className='mx-3'> <Link to ={"/aboutus"} > About Us</Link></li>
+                       <li > <Link to ={"/contactus"} >Contact Us</Link></li>
                     </ul>
                 </div>
                 <div className="navbtn btn buttom mx-4">
-                    <button className='btn-danger px-4 py-2 rounded'>Login</button>
+                <button className='btn-danger px-4 py-2 mx-1 rounded'><Link to ={"/registration"} className="text-decoration-none  text-light ">Registration</Link></button>
+                <button className='btn-danger px-4 py-2 rounded'> <Link to ={"/login"} className="text-decoration-none  text-light ">Login</Link></button>
                 </div>
 			</div>
         
