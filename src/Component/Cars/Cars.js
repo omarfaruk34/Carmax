@@ -67,15 +67,14 @@ const handleSubmit = (e) =>{
            <h4 className='text-center pt-5 text-danger pweight'>Popular Cars</h4>
            <h2 className='car text-center my-5 text-muted h1weight'>Most <span className='text-danger'>Popular</span> Cars<br /> In Our Shop</h2>
         
-         <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit}>
          <div className="form-contain row">
-                        <div className="col-xl-12 my-1 bg">
+                        <div className="col-xl-6 my-1 bg">
                              <input type="text" className='form-control' placeholder='Your Brand Name Here' onChange={e=> setName(e.target.value)} />
                          </div>
-            {/* <input type="text" placeholder="Search by " onChange={e=> setName(e.target.value)}/> <br/> */}
-            <div className="col-xl-12 my-1 bg">
-            <label htmlFor="" className='mx-2 text-primary font-weight-bold'>Fuel:</label><select className='col-xl-10 mx-2 px-2 py-1' name="" id="" onChange={e=> setFuel(e.target.value)}>
-                <option value="">select option</option>
+            <div className="col-xl-6 my-1 bg">
+        <select className='p-1 form-control' name="" id="" onChange={e=> setFuel(e.target.value)}>
+                <option value="">Fuel</option>
                 <option value="petrol">petrol</option>
                 <option value="diesel">diesel</option>
                 <option value="cng">cng</option>
@@ -87,11 +86,13 @@ const handleSubmit = (e) =>{
                          <div className="col-xl-6 my-1 bg">
             <input type="text"  className='my-1 form-control' placeholder="Search by Price to" onChange={e=> setPriceTo(e.target.value)}/>
                          </div>
-                         <div className="col-xl-12 ">
+                         <div className="col-xl-12">
                          <input type="submit" className='rounded' value="search"/>
+                         <input type="reset" className='rounded' value="Reset"/>
                          </div>
             </div>
-            </form>
+            </form> 
+         
          
            <div className='car-box d-flex flex-wrap'>
                {

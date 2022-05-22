@@ -62,8 +62,15 @@ export default function AddCar() {
                         className="form-control"
                     />
                     </div>
-                    <div className="col-xl-12 mr-2 p-3">
+                    <div className="col-xl-6 mr-2 p-3">
                     <input
+                        {...register("image", { required: true })}
+                        placeholder="Image Link"
+                        className="form-control"
+                    />
+                    </div>
+                    <div className="col-xl-6 mr-2 p-3">
+                    <input type="file"
                         {...register("image", { required: true })}
                         placeholder="Image Link"
                         className="form-control"
