@@ -21,7 +21,7 @@ const Cars = () => {
     const [priceTo, setPriceTo] = useState(0)
     const [fuel, setFuel] = useState("")
     useEffect(() => {
-        fetch('/file.json')
+        fetch('http://localhost:5000/addCar')
         .then(res=> res.json())
         .then(data=>{
             setCars(data)

@@ -17,6 +17,11 @@ import Registration from './Component/Registration/Registration';
 import Login from './Component/Login/Login';
 import AdminDashboard from './Component/AdminDashboard/AdminDashboard';
 import AuthProvider from './Context/AuthProvider';
+import AddCar from './Component/AddCar/AddCar';
+import Orders from './Component/Orders/Orders';
+import ReviewPost from './Component/ReviewPost/ReviewPost';
+import Message from './Component/Message/Message';
+import Totalorder from './Component/Total-order/Total-order';
 
 function App() {
   return (
@@ -32,6 +37,15 @@ function App() {
        <Route path='/registration' element={<Registration/>}/>
        <Route path='/login' element={<Login/>}/>
        <Route path='/admin' element={<AdminDashboard/>}/>
+       <Route path='/addcar' element={<AddCar/>}/>
+       <Route path='/order' element={<Orders/>}/>
+       <Route path='/order' element={<Orders/>}/>
+       <Route path='/reviewpost' element={<ReviewPost/>}/>
+       <Route path='/message' element={<Message/>}/>
+       <Route path='/allorders' element={<Totalorder/>}/>
+
+
+
      </Routes>
      <Footer/>
      </BrowserRouter>

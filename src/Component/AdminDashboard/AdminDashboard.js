@@ -29,7 +29,12 @@ export default function AdminDashboard() {
             {
                 activeTab === "orders" && <Orders/>
             }
+           
         </div>
     </div>
+   
   )
-}
+        }
+
+
+
