@@ -63,36 +63,53 @@ const handleSubmit = (e) =>{
 }
 
     return (
-       <div className='car'>
-           <h4 className='text-center pt-5 text-danger pweight'>Popular Cars</h4>
-           <h2 className='car text-center my-5 text-muted h1weight'>Most <span className='text-danger'>Popular</span> Cars<br /> In Our Shop</h2>
-        
-          <form onSubmit={handleSubmit}>
+      <div className="car-area">
+           <div className='car'>
+           <h4 className='text-center text-danger pweight'>Popular Cars</h4>
+           <h2 className='car text-center text-dark h1weight'>Most <span className='text-danger'>Popular</span> Cars<br /> In Our Shop</h2>
+        <div className="car-search shadow">
+            <h5 className='text-center fs-3 text-dark'>Find Car</h5>
+            
+        <form onSubmit={handleSubmit}>
          <div className="form-contain row">
+
                         <div className="col-xl-6 my-1 bg">
                              <input type="text" className='form-control' placeholder='Your Brand Name Here' onChange={e=> setName(e.target.value)} />
                          </div>
             <div className="col-xl-6 my-1 bg">
-        <select className='p-1 form-control' name="" id="" onChange={e=> setFuel(e.target.value)}>
-                <option value="">Fuel</option>
+        <select className='p-1 form-select' name="" id="" onChange={e=> setFuel(e.target.value)}>
+                <option value="">Fuel Type</option>
                 <option value="petrol">petrol</option>
                 <option value="diesel">diesel</option>
                 <option value="cng">cng</option>
             </select>
                          </div>
                          <div className="col-xl-6 my-1 bg">
-                         <input type="text" className='my-1 form-control' placeholder="Search by Price from" onChange={e=> setPriceFrom(e.target.value)}/>
+                         <select className='p-1 form-select' name="" id="" onChange={e=> setPriceFrom(e.target.value)}>
+                <option value="">Search by Price from</option>
+                <option value="50000">50000</option>
+                <option value="100000">100000</option>
+                <option value="1500000">1500000</option>
+            </select>
+                         {/* <input type="text" className='my-1 form-control' placeholder="Search by Price from" onChange={e=> setPriceFrom(e.target.value)}/> */}
                          </div>
                          <div className="col-xl-6 my-1 bg">
-            <input type="text"  className='my-1 form-control' placeholder="Search by Price to" onChange={e=> setPriceTo(e.target.value)}/>
+                         <select className='p-1 form-select' name="" id="" onChange={e=> setPriceTo(e.target.value)}>
+                <option value="">Search by Price To</option>
+                <option value="99999">99999</option>
+                <option value="1499999">1499999</option>
+                <option value="2000000">2000000</option>
+            </select>
+            {/* <input type="text"  className='my-1 form-control' placeholder="Search by Price to" onChange={e=> setPriceTo(e.target.value)}/> */}
                          </div>
-                         <div className="col-xl-12">
-                         <input type="submit" className='rounded' value="search"/>
-                         <input type="reset" className='rounded' value="Reset"/>
+                         <div className="col-xl-12 my-2">
+                         <input type="submit" className='rounded' value="Find Car"/>
                          </div>
             </div>
             </form> 
          
+        </div>
+          
          
            <div className='car-box d-flex flex-wrap'>
                {
@@ -121,6 +138,7 @@ const handleSubmit = (e) =>{
            </div>
        </div>
 
+      </div>
 
         
     );

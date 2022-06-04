@@ -22,7 +22,7 @@ export default function AddCar() {
     };
     return (
         <div className='row'>
-            <div id="AddCar" className='addcar col-xl-10'>
+            <div id="AddCar" className='addcar col-xl-12'>
                 <h2 className="my-3 p-3 text-center text-danger">Please Add Car</h2>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="row">
@@ -62,20 +62,20 @@ export default function AddCar() {
                         className="form-control"
                     />
                     </div>
-                    <div className="col-xl-6 mr-2 p-3">
+                    <div className="col-xl-6git  mr-2 p-3">
                     <input
                         {...register("image", { required: true })}
                         placeholder="Image Link"
                         className="form-control"
                     />
                     </div>
-                    <div className="col-xl-6 mr-2 p-3">
+                    {/* <div className="col-xl-6 mr-2 p-3">
                     <input type="file"
                         {...register("image", { required: true })}
                         placeholder="Image Link"
                         className="form-control"
                     />
-                    </div>
+                    </div> */}
                     {errors.exampleRequired && <span>This field is required</span>}
 
                     

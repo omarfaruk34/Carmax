@@ -22,6 +22,8 @@ import Orders from './Component/Orders/Orders';
 import ReviewPost from './Component/ReviewPost/ReviewPost';
 import Message from './Component/Message/Message';
 import Totalorder from './Component/Total-order/Total-order';
+import Dashboard from './Component/Dashboard/Dashboard';
+import Blog from './Component/Blog/Blog';
 
 function App() {
   return (
@@ -33,6 +35,7 @@ function App() {
        <Route path="/about" element={<About/>} />
        <Route path="/cars" element={<Cars/>} />
        <Route path="/contact" element={<Contact/>} />
+       <Route path="/blog" element={<Blog/>} />
        <Route path="/cars/:carId" element={<Cardetails/>} />
        <Route path='/registration' element={<Registration/>}/>
        <Route path='/login' element={<Login/>}/>
@@ -43,6 +46,8 @@ function App() {
        <Route path='/reviewpost' element={<ReviewPost/>}/>
        <Route path='/message' element={<Message/>}/>
        <Route path='/allorders' element={<Totalorder/>}/>
+       <Route path='/dashboard' element={<Dashboard/>}/>
+
 
 
 

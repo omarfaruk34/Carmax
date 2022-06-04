@@ -1,0 +1,68 @@
+.team-area{
+    padding: 70px 0;
+}
+.team-container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.team {
+    display: grid;
+        grid-template-columns: repeat(3, 30%);
+            column-gap: 5%;
+            /* background-color: #ddd; */
+            border-radius: 10px;
+            padding: 20px;
+  }
+  
+  .team .single-team {
+    background-image: url('../../../public/1.jpg');
+    background-position: top;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .team .single-team:hover .team-content {
+    bottom: 0;
+  }
+  
+  .team .single-team .team-content {
+    position: absolute;
+    content: "";
+    background-color: #0a1520;
+    opacity: .75;
+    left: 0;
+    bottom: -127px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .team .single-team .team-content h4 {
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  
+  .team .single-team .team-content h4 span {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .team .single-team .team-content a i {
+    font-size: 20px;
+    margin: 20px 10px;
+    color: #fff;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  
+  .team .single-team .team-content a i:hover {
+    color: blue;
+    font-size: 26px;
+  }
+  

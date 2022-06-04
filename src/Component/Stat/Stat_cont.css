@@ -1,6 +1,5 @@
 .statContainer{
     margin: auto;
-    margin-top: 20px;
     background-image: url('../../../public/fea.jpg');
     background-size: cover;
     background-position: center;
@@ -10,7 +9,7 @@
     z-index: 1;
 }
 .statContainer h2{
-
+    font-family:'Oleo Script', cursive;
 }
 .statContainer:before{
     position: absolute;

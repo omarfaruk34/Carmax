@@ -1,9 +1,61 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./Cardetails.css"
 
 
 const Cardetails = () => {
+  const [review, setReview] = useState({
+    review :"",
+    rating: "",
+  });
+  console.log(new Date());
+  const handleReview = (e) => {
+    setReview({
+      ...review,
+      [e.target.name]: e.target.value
+    });
+  }
+  const handleReviewSubmit = async(e) => {
+    e.preventDefault();
+    axios.post('http://localhost:5000/reviews', review)
+    .then(res=>{
+      if(res.status === 200){
+        alert('review done');
+      }
+    })
+  }
+  // fetch('/url', {
+  //   method: "POST",
+  //   headers: {
+  //     "content-type": 'appliction/json',
+  //   },
+  //   body: {
+  //     JSON.stringify(review)
+  //   }
+  // })
+  const [orders, setOrder] = useState({
+    name :"",
+    email: "",
+    number: ""
+  });
+  const handleOrder = (e) => {
+    setOrder({
+      ...orders,
+      [e.target.name]: e.target.value
+    });
+  }
+  const handleOrderSubmit = async(e) => {
+    e.preventDefault();
+    axios.post('http://localhost:5000/orders', orders)
+    .then(res=>{
+      console.log(res);
+      if(res.status === 200){
+        alert('Order in pending now');
+      }
+    })
+  }
+
     const {carId} = useParams();
     const [cars,setCars] =useState();
     useEffect(()=>{
@@ -21,12 +73,12 @@ const Cardetails = () => {
         <img src={matchedcar?.image} alt="" /> 
         </div>
         <div className="contact-form">
-          <h1>Contact Us</h1>
-          <form action="">
-            <input type="text" placeholder="Your Name" />
-            <input type="email" placeholder="Your email" />
-            <input type="number" placeholder="Your Phone Number" />
-            <input type="submit" value="SEND" />
+          <h1>order now</h1>
+          <form onSubmit={handleOrderSubmit}>
+            <input type="text" name="name" onChange={handleOrder}  placeholder="Your Name" />
+            <input type="email" name="email" onChange={handleOrder} placeholder="Your email" />
+            <input type="number" name="number" onChange={handleOrder} placeholder="Your Phone Number" />
+          <input type="submit" value="SEND" />
 
           </form>
         </div>
@@ -37,12 +89,12 @@ const Cardetails = () => {
           <p>Color: {matchedcar?.color}</p>
           <p><span>Description:</span> {matchedcar?.description}</p>
           <button>Add to Cart</button>
-
-
         </div>
-
-       
-
+        <form onSubmit={handleReviewSubmit}>
+          <input type="text" name="review" onChange={handleReview} placeholder="write your opinion" />
+          <input type="text" name="rating" onChange={handleReview} placeholder="rating" />
+          <input type="submit" value="submit" />
+        </form>
       </div>
     );
 };

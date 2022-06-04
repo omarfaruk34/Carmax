@@ -1,38 +1,54 @@
+
 import React from 'react';
-import "./Contact.css"
-const Contact = () => {
-    return (
-        <div className='form-container '>
-            <h1 className='text-muted'>If You Have Any Question <br /><span className='text-green'>Drop A Message</span></h1>
-            <div className="form-box mt-5">
-                <form action="">
-                     <div className="row">
-                         <div className="col-xl-6 my-3 bg">
-                             <input type="text" className='form-control' placeholder='Your Name Here' />
-                         </div>
-                         <div className="col-xl-6 my-3 bg">
-                             <input type="text"  className='form-control' placeholder='Your Number Here' />
-                         </div>
-                         <div className="col-xl-12 my-3 bg">
-                             <input type="text"  className='form-control'  placeholder='Your Email Here' />
-                         </div>
-                        
-                         <div className="col-xl-12 my-3 bg">
-                             <input type="text" className='form-control'  placeholder='Text Here' />
-                         </div>
-                         <div className="sub-btn col-xl-12 text-end">
-                         <input type="submit" className=' rounded'/>
-                         </div>
-                        
-                     </div>
+import "./Contact.css";
+import {FaLocationArrow} from "react-icons/fa";
+import {AiFillPhone} from "react-icons/ai";
+import {AiOutlineMail} from "react-icons/ai";
+import {DiWebplatform} from "react-icons/di";
 
-                </form>
+
+
+export default function Contact() {
+  return (
+      
+             <section className="contact-area">
+        <div className="contact-container">
+            <div className="section-title">
+                <h2>Contact Us</h2>
+                <p>Lorem ipsum dolor sit. vitae eaque minima suscipit, rem odio exercitationem!</p>
             </div>
-				
-			</div>
-        
-        
-    );
-};
+            <div className="contact">
+                <div className="contact-address">
+                      <div className="single-address">
+                        <p><FaLocationArrow/></p>
+                          <h4>Address <span>1123,west B block, London</span></h4>
+                      </div>
+                      <div className="single-address">
+                        <p><AiFillPhone/></p>
+                          <h4>Phone <span>+123 123 3434 454</span></h4>
+                      </div>
+                      <div className="single-address">
+                        <p><AiOutlineMail/></p>
+                          <h4>Email <span>info@gmail.com</span></h4>
+                      </div>
+                      <div className="single-address">
+                        <p><DiWebplatform/></p>
+                          <h4>Website <span>www.gmail.com</span></h4>
+                      </div>
+                </div>
+                <div className="contact-form1">
+                    <form action="">
+                       <input type="text" placeholder="Your name"/>
+                       <input type="email" placeholder="Your email"/>
+                       <input type="text" placeholder="Your subject"/>
+                       <textarea name="" id="" placeholder="Message"/>
+                       <input type="submit" value="send"/>
 
-export default Contact;
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+       
+  )
+}

@@ -1,55 +1,140 @@
 import React from 'react';
-import {AiFillEdit} from "react-icons/ai";
-import {GrUpdate} from "react-icons/gr";
-import {AiFillDelete} from "react-icons/ai";
+import {HiOutlineDesktopComputer} from "react-icons/hi";
+
+import { Table } from 'react-bootstrap';
+import { Badge } from 'react-bootstrap';
 
 
 export default function Orders() {
   return (
-    <div className='row'>
-      {/* <Table striped bordered hover variant="dark"> */}
-      <div className="col-xl-10">
-      <h2 className='bg-primary text-light text-center p-2'>Customer Order</h2>
-      <table className='table'>
-  <thead className='table-dark'>
-    <tr>
-      <th>#</th>
-      <th>Order</th>
-      <th>Purchased</th>
-      <th>Toatal</th>
-      <th>Date</th>
-      <th>Action</th>
+    <div className="table bg-light">
+        <h4 className=""><span><HiOutlineDesktopComputer/></span>Order</h4>
+        <Table striped bordered hover>
+  <thead>
+  <tr>
+  <th>#</th>
+      <th>User Name</th>
+      <th>Car Name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th>staus</th>
     </tr>
   </thead>
   <tbody>
     <tr>
+    <td>1</td>
+      <td>Kaled</td>
+      <td>Corola</td>
+      <td>2000000/-</td>
       <td>1</td>
-      <td>147 admin</td>
-      <td>1 item</td>
-      <td>2000000/-</td>
-      <td>12-02-22</td>
-      <td><AiFillEdit/><GrUpdate/><AiFillDelete/></td>
+      <td>+88033 1343 1</td>
+      <td>kaled23@gmail.com</td>
+      <td><Badge bg="info" text="dark">
+      pending
+  </Badge>{' '}</td>
     </tr>
     <tr>
-      <td>2</td>
-      <td>157 admin</td>
-      <td>1 item</td>
+    <td>1</td>
+      <td>Kaled</td>
+      <td>Corola</td>
       <td>2000000/-</td>
-      <td>12-02-22</td>
-      <td><AiFillEdit/><GrUpdate/><AiFillDelete/></td>
+      <td>1</td>
+      <td>+88033 1343 1</td>
+      <td>kaled23@gmail.com</td>
+      <td><Badge bg="danger" text="dark">
+      pending
+  </Badge>{' '}</td>
     </tr>
     <tr>
-      <td>3</td>
-      <td>147 admin</td>
-      <td>1 item</td>
+    <td>1</td>
+      <td>Kaled</td>
+      <td>Corola</td>
       <td>2000000/-</td>
-      <td>12-02-22</td>
-      <td><AiFillEdit/><GrUpdate/><AiFillDelete/></td>
+      <td>1</td>
+      <td>+88033 1343 1</td>
+      <td>kaled23@gmail.com</td>
+      <td><Badge bg="light" text="dark">
+      pending
+  </Badge>{' '}</td>
+    </tr>
+    <tr>
+    <td>1</td>
+      <td>Kaled</td>
+      <td>Corola</td>
+      <td>2000000/-</td>
+      <td>1</td>
+      <td>+88033 1343 1</td>
+      <td>kaled23@gmail.com</td>
+      <td><Badge bg="dark" text="danger">
+      pending
+  </Badge>{' '}</td> 
+    </tr>
+    <tr>
+    <td>1</td>
+      <td>Kaled</td>
+      <td>Corola</td>
+      <td>2000000/-</td>
+      <td>1</td>
+      <td>+88033 1343 1</td>
+      <td>kaled23@gmail.com</td>
+      <td><Badge bg="light" text="dark">
+      pending
+  </Badge>{' '}</td>  
+    </tr>
+    <tr>
+    <td>1</td>
+      <td>Kaled</td>
+      <td>Corola</td>
+      <td>2000000/-</td>
+      <td>1</td>
+      <td>+88033 1343 1</td>
+      <td>kaled23@gmail.com</td>
+      <td><Badge bg="light" text="dark">
+      pending
+  </Badge>{' '}</td> 
+    </tr>
+    <tr>
+    <td>1</td>
+      <td>Kaled</td>
+      <td>Corola</td>
+      <td>2000000/-</td>
+      <td>1</td>
+      <td>+88033 1343 1</td>
+      <td>kaled23@gmail.com</td>
+      <td><Badge bg="light" text="dark">
+      pending
+  </Badge>{' '}</td> 
+    </tr>
+    <tr>
+    <td>1</td>
+      <td>Kaled</td>
+      <td>Corola</td>
+      <td>2000000/-</td>
+      <td>1</td>
+      <td>+88033 1343 1</td>
+      <td>kaled23@gmail.com</td>
+      <td><Badge bg="light" text="dark">
+      pending
+  </Badge>{' '}</td> 
+    </tr>
+    <tr>
+    <td>1</td>
+      <td>Kaled</td>
+      <td>Corola</td>
+      <td>2000000/-</td>
+      <td>1</td>
+      <td>+88033 1343 1</td>
+      <td>kaled23@gmail.com</td>
+      <td><Badge bg="light" text="dark">
+      pending
+  </Badge>{' '}</td> 
     </tr>
   </tbody>
-</table>
-      </div>
-  
-    </div>
+</Table>
+        </div>
+    
+    
   )
 }

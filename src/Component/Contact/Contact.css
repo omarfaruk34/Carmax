@@ -1,77 +1,120 @@
-.form-container{
-    font-family: 'Poppins', sans-serif;
-    width: 1000px;
-    background-color: #F8F9FA;
-    border: 8px ridge #F8F9FA;
-    /* border: 4px ridge #e74c3c; */
-    padding: 30px 25px;
-    margin: auto;
-    margin-top: 60px;
+.contact-area{
+    /* background-image: url('../../../public/about-img-01.png');
+    background-position: center;
+    background-size: cover;
     position: relative;
-   
+    z-index: 2; */
+    padding: 50px 0;
+    background-color: #F8F9FA;
 }
-.form-container h1{
-    font-size: 20px;
-    text-align: center;
-    margin-top: 20px;
-}
-.form-container::before{
+/* .contact-area::before{
     position: absolute;
     content: "";
-    background-image: url('../../../public/contact.png');
-    background-size: cover;
-    background-position: center;
-    width: 126px;
-    height: 140px;
-    right: 0;
-    top: 10px;
-}
-.sub-btn input{
-    /* display: inline-block;
-    padding: 10px 35px;
-    background-color: #2ecc71;
-    position: relative;
-    overflow: hidden;
-    z-index: 2; */
-
-    
-    border: 3px ridge #DC3545;
-    color: #DC3545;
-    font-size: 20px;
-    display: inline-block;
-    /* width: 200px; */
-    margin: auto;
-    text-align: center;
-    text-decoration: none;
-    padding: 15px 30px;
-    font-weight: 900;
-    position: relative;
-    z-index: 2;
-    overflow: hidden;
-}
-.sub-btn input:hover{
-    color: #333;
-    border: 3px ridge #0a0a0a;
-}
-
- .text-green{
-    color: #DC3545;
-    font-weight: 900;
-} 
-/* .inputt{
-    background-color: #98BE25;
-    color: #fff;
-}  */
-.bg input:hover{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .75;
+    z-index: -1;
     background-color: #333;
-    color: #fff;
+} */
+.contact-container{
+    width: 1170px;
+    margin: auto;
 }
+.contact-area .section-title{
+    color: #333;
+}
+.section-title{
+    padding-top: 30px;
+    padding-bottom: 30px;
 
+}
+.contact {
+    display: -ms-grid;
+    display: grid;
+   
+        grid-template-columns: repeat(2, 45%);
+  
+            column-gap: 5%;
+  }
+  
+  .contact .contact-address {
+   
+    display: grid;
+    
+        grid-template-columns: repeat(2, 45%);
+    
+            column-gap: 5%;
+  }
+  
+  .contact .contact-address .single-address {
 
+    display: flex;
+    -webkit-box-align: center;
+        
+            align-items: center;
+  }
+  
+  .contact .contact-address .single-address p {
+	background-color: #0a1520;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 34px;
+	padding: 0px;
+	margin-right: 24px;
+	width: 70px;
+	height: 70px;
+	line-height: 60px;
+	padding-left: 15px;
+}
+  
+  .contact .contact-address .single-address h4 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #333;
+  }
+  
+  .contact .contact-address .single-address h4 span {
+    font-size: 12px;
+    display: block;
+    font-weight: 400;
+    text-transform: lowercase;
+  }
+  
+  .contact .contact-form1 input {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .contact .contact-form1 textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .contact .contact-form1 input[type="submit"] {
+    color: #fff;
+    background-color: #0a1520;
+    font-size: 22px;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  
+  .contact .contact-form1 input[type="submit"]:hover {
+    background-color: #333333;
+    color: #fff;
+  }
+  
 
 /* Responsive code */
 /* Medium Layout: 1280px. */
 /* Checking Size 1000px */
+/*
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .form-container{
         width: 970px;
@@ -91,9 +134,10 @@
     }
 
 }
-
+*/
 /* Tablet Layout: 768px. */
 /* Checking Size 800px */
+/*
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .form-container{
         width: 750px;
@@ -116,9 +160,10 @@
         top: 0;
     }
 }
-
+*/
 /* Mobile Layout: 320px. */
 /* Checing Point: 400px */
+/*
 @media only screen and (max-width: 767px) {
     .form-container{
         width: 330px;
@@ -145,8 +190,9 @@
         top: 0;
     }
 }
-
+*/
 /* Wide Mobile Layout: 480px. */
+/*
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .form-container{
         width: 450px;
@@ -172,4 +218,5 @@
         left: -100%;
         top: 0;
     }
-}
+} 
+*/

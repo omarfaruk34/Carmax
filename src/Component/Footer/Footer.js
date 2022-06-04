@@ -7,7 +7,7 @@ import {FaLocationArrow} from "react-icons/fa"
 
 const Footer = () => {
     return (
-        <div className='footer d-flex mt-5'>
+        <div className='footer d-flex'>
 
              <div className="contact d-flex p-5">
                  <div className="shop-details text-muted">

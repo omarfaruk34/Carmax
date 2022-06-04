@@ -1,4 +1,4 @@
-.hero-container{
+/* .hero-container{
     font-family: 'Poppins', sans-serif;
     background-image: url('../../../public/slider-banner.jpg');
     margin: auto;
@@ -7,12 +7,26 @@
     background-size: cover;
     background-position: center;
     flex-direction: column;
-
+  width: 100%;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+} */
+.hero-area{
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../../../public/slider-banner.jpg');
+    margin: auto;
+    background-repeat: no-repeat;
+    min-height: 85vh;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+  width: 100%;
     position: relative;
     z-index: 2;
     overflow: hidden;
 }
-.hero-container:after{
+.hero-area:after{
     position: absolute;
     content: "";
     background-image: url('../../../public/audi.png');
@@ -46,13 +60,19 @@
    position: absolute;
 
 } */
+.hero-container{
+    width: 1170px;
+    min-height: 85vh;
+    margin: 0 auto;
+    position: relative;
+}
 .hero-container h1{
     padding-top: 110px;
+    font-family: 'Oleo Script', cursive;
 }
-
-/* .hero-container span{
-    color: #e74c3c;
-} */
+.hero-container h2{
+    font-family: 'Oleo Script', cursive;
+}
 
 .hero-container p{
     width: 50%;
@@ -62,12 +82,11 @@
     color: #fff;
     font-size: 19px;
     display: inline-block;
-    /* width: 200px; */
     margin: auto;
     text-align: center;
     text-decoration: none;
-    padding: 20px 20px;
-    font-weight: 900;
+    padding: 15px 20px;
+    font-weight: 600;
     position: relative;
     z-index: 1;
     overflow: hidden;

@@ -1,20 +1,79 @@
 .buton button:hover{
     background-color: #2c3e50;
 }
+.car-area{
+    background-color: #F8F9FA;
+    /* background-color: #2c3e50; */
+}
 .car{
     font-family: 'Poppins', sans-serif;
     /* background-color: #F8F4DA; */
-    background-color: #F8F9FA;
     margin: auto;
     position: relative;
+    width: 1170px;
+    margin: auto;
+    padding: 50px 0;
+}
+.car h2{
+    font-size: 30px;
+   font-family:'Oleo Script', cursive;
+}
+.car h4{
+    padding-top: 130px;
+}
+.car-search {
+	width: 822px;
+	margin: auto;
+	background-color: #fff;
+	position: absolute;
+	left: 154px;
+	top: -80px;
+	z-index: 2;
+	border-radius: 10px;
+	padding: 16px 23px;
 }
 .car-box{
-   
     justify-content: space-around;
-}
+} 
 .car-item{
     width: 30%;
+    border-radius: 20px;
+    background-color: #0a1520;
 }
+.car-item .image img{
+    transition: .3s;
+}
+.car-item .image img:hover{
+    transform: scale(1.1);
+}
+ .car-box .car-item .image:hover .car-buton {
+     cursor: pointer;
+    bottom: 0;
+  } 
+   .car-item .image{
+       position: relative;
+       overflow: hidden;
+   }
+  .car-item .image .car-buton {
+    position: absolute;
+    content: "";
+    background-color: #0a1520;
+    opacity: .75;
+    left: 0;
+    bottom: -78px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+ 
+  .car-buton .logo{
+      font-size: 25px;
+      font-weight: 600;
+      padding: 10px 0;
+      color: #fff;
+  }
 .image img{
     height: 230px;
 }
@@ -26,7 +85,7 @@
     height: 1px;
     left: 0;
     right: 0;
-    bottom: -15px;
+    bottom: 45px;
     margin: 0 auto;
 
     
@@ -39,7 +98,7 @@
     height: 1px;
     left: 0;
     right: 0;
-    bottom: -25px;
+    bottom: 40px;
     margin: 0 auto;
     background-color: #DC3545;
     
@@ -86,16 +145,30 @@
 .bg-black{
     color: #333333;
 }
+.car-content{
+    background-color: #0a1520;
+    border-radius: 5px;
+    border-bottom: 5px solid #DC3545;
+}
+.car-content_title {
+    display: flex;
+    justify-content: space-between;
+  }
+  .car-content_title h3 {
+	font-size: 20px;
+	font-weight: 600;
+}
 
-.content_title h2{
-    font-size: 20px;
+.rating {
+  display: flex;
+  justify-content: space-between;
+}
+.rating h3{
+    font-size: 16px;
     font-weight: 400;
-    font-style: italic;
+    line-height: 30px;
 }
-.content_title p{
-    font-weight: 300;
-    font-size: 20px;
-}
+
 
 .form-contain {
     width: 800px;
@@ -106,7 +179,7 @@ form input[type="submit"] {
     padding: 4px 0;
     font-size: 20px;
     text-transform: capitalize;
-    background-color: #DC3545;
+    background-color: #0a1520;
     color: #fff;
     border: none;
     margin-right: 10px;
@@ -118,15 +191,21 @@ form input[type="reset"] {
     padding: 4px 0;
     font-size: 20px;
     text-transform: capitalize;
-    background-color: #DC3545;
+    background-color: #0a1520;
     color: #fff;
     border: none;
     border-radius: 5px;
     transition: .3s;
 }
 form input[type="submit"]:hover {
-   background-color: #0a1520;
+   background-color: #ddd;
+   color: #0a1520;
 }
+form input[type="reset"]:hover {
+    background-color: #ddd;
+    color: #0a1520;
+
+ }
 
 
 
