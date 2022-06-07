@@ -1,77 +1,66 @@
-import React from 'react';
-import Slider from "react-slick";
-import "./Democar.css"
+// import React from 'react';
+// import "./Democar.css"
 
-export default function Democar() {
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        autoplay: true
-      };
-  return (
-    <section className="car-area">
-        <div className="car-container">
-            <div className="car-container1">
-                <div className="section-title">
-                   <h4>What we do</h4>
-                   <h2>Latest Car</h2>
-                </div>
+// export default function Democar() {
     
-                <div className="latest-car">
-                <Slider {...settings}>
-                    <div className="single-latest-car shadow ">
-                        <div className="image">
-                            <img src="" alt="" />
-                        </div>
-                        <div className="latest-car-content">
-                            <h1>BMW</h1>
-                            <p>Lorem, ipsum dolor sit amet consectetur <br /> Lorem ipsum dolor sit amet.</p>
-                            <div className="price">
-                                <h2>Price: $8487</h2>
-                                <h2>Milege: 42 mi</h2>
-                            </div>
-                            <h4>Rating: </h4>
-                            <button className='btn btn-light'>Explore Now</button>
-                        </div>
-                    </div>
-                    <div className="single-latest-car shadow">
-                        <div className="image">
-                            <img src="" alt="" />
-                        </div>
-                        <div className="latest-car-content">
-                            <h1>BMW</h1>
-                            <p>Lorem, ipsum dolor sit amet consectetur <br /> Lorem ipsum dolor sit amet.</p>
-                            <div className="price">
-                                <h2>Price: $8487</h2>
-                                <h2>Milege: 42 mi</h2>
-                            </div>
-                            <h4>Rating: </h4>
-                            <button className='btn btn-light'>Explore Now</button>
-                        </div>
-                    </div>
-                    <div className="single-latest-car shadow">
-                        <div className="image">
-                            <img src="" alt="" />
-                        </div>
-                        <div className="latest-car-content">
-                            <h1>BMW</h1>
-                            <p>Lorem, ipsum dolor sit amet consectetur <br /> Lorem ipsum dolor sit amet.</p>
-                            <div className="price">
-                                <h2>Price: $8487</h2>
-                                <h2>Milege: 42 mi</h2>
-                            </div>
-                            <h4>Rating: </h4>
-                            <button className='btn btn-light rounded'>Explore Now</button>
-                        </div>
-                    </div>
-                    </Slider>
-                </div>
-            </div>
+//   return (
+//     <section className="car-area">
+//         <div className="car-container">
+//             <div className="car-container1">
+//                 <div className="section-title">
+//                    <h4>What we do</h4>
+//                    <h2>Latest Car</h2>
+//                 </div>
+    
+//                 <div className="latest-car">
+//                     <div className="latest-car-left">
+//                          <div className="top-latest-car-left">
+//                              <div className="top-single-car-left" style="background-image: url('https://i.ibb.co/qMjPVzt/joy.jpg')">
+//                                   <div className="latest-car-info">
+//                                       <h4>Price: 2000000</h4>
+//                                       <h1>Audi A3</h1>
+//                                   </div>
+//                                   <div className="new">
+//                                       <h4>NEW</h4>
+//                                   </div>
+//                              </div>
+//                              <div className="top-single-car-left" style="background-image: url('https://i.ibb.co/qMjPVzt/joy.jpg')">
+//                              <div className="latest-car-info">
+//                                       <h4>Price: 2000000</h4>
+//                                       <h1>Audi A3</h1>
+//                                   </div>
+//                                   <div className="new">
+//                                       <h4>NEW</h4>
+//                                   </div>
+//                              </div>
+//                          </div>
+//                          <div className="bottom-latest-car-left" >
+//                               <div className="bottom-single-car-left" style="background-image: url('https://i.ibb.co/qMjPVzt/joy.jpg')">
+//                               <div className="latest-car-info">
+//                                       <h4>Price: 2000000</h4>
+//                                       <h1>Audi A3</h1>
+//                                   </div>
+//                                   <div className="new">
+//                                       <h4>NEW</h4>
+//                                   </div>
+//                               </div>
+//                          </div>
+//                     </div>
+//                     <div className="latest-car-right">
+//                     <div className="bottom-single-car-left" style="background-image: url('')">
+//                               <div className="latest-car-info">
+//                                       <h4>Price: 2000000</h4>
+//                                       <h1>Audi A3</h1>
+//                                   </div>
+//                                   <div className="new">
+//                                       <h4>NEW</h4>
+//                                   </div>
+//                               </div>
+//                     </div>
+//                 </div>
+//             </div>
 
-        </div>
-    </section>
-  )
-}
+//         </div>
+//     </section>
+//   )
+// }

@@ -15,9 +15,9 @@
   }
   
   .team .single-team {
-    background-image: url('../../../public/1.jpg');
+    /* background-image: url('../../../public/1.jpg');
     background-position: top;
-    background-size: cover;
+    background-size: cover; */
     height: 300px;
     position: relative;
     overflow: hidden;
@@ -53,16 +53,34 @@
     line-height: 20px;
   }
   
-  .team .single-team .team-content a i {
+  .team .single-team .team-content .link p:nth-child(1) {
     font-size: 20px;
-    margin: 20px 10px;
-    color: #fff;
+    margin: 10px 10px 15px 10px;
+    color: #3b5998 ;
     -webkit-transition: .3s;
     transition: .3s;
   }
+  .team .single-team .team-content .link p:nth-child(2) {
+    font-size: 20px;
+    margin: 10px 10px 15px 10px;
+    color: #c32aa3 ;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .team .single-team .team-content .link p:nth-child(3) {
+    font-size: 20px;
+    margin: 10px 10px 15px 10px;
+    color: #0a66c2;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+ 
   
-  .team .single-team .team-content a i:hover {
-    color: blue;
+  .team .single-team .team-content .link p:hover {
     font-size: 26px;
+  }
+  .link {
+    display: flex;
+    justify-content: center;
   }
   

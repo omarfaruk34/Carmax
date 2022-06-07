@@ -21,7 +21,6 @@ import AddCar from './Component/AddCar/AddCar';
 import Orders from './Component/Orders/Orders';
 import ReviewPost from './Component/ReviewPost/ReviewPost';
 import Message from './Component/Message/Message';
-import Totalorder from './Component/Total-order/Total-order';
 import Dashboard from './Component/Dashboard/Dashboard';
 import Blog from './Component/Blog/Blog';
 
@@ -42,10 +41,8 @@ function App() {
        <Route path='/admin' element={<AdminDashboard/>}/>
        <Route path='/addcar' element={<AddCar/>}/>
        <Route path='/order' element={<Orders/>}/>
-       <Route path='/order' element={<Orders/>}/>
        <Route path='/reviewpost' element={<ReviewPost/>}/>
        <Route path='/message' element={<Message/>}/>
-       <Route path='/allorders' element={<Totalorder/>}/>
        <Route path='/dashboard' element={<Dashboard/>}/>
 
 

@@ -14,6 +14,8 @@ import Payment from '../Payment/Payment';
 import ReviewPost from '../ReviewPost/ReviewPost';
 import Dashboard from '../Dashboard/Dashboard';
 import AddCar from '../AddCar/AddCar';
+import Message from '../Message/Message';
+import Manageorders from '../Manage-order/Manage-order';
 
 
 export default function AdminDashboard() {
@@ -33,7 +35,6 @@ export default function AdminDashboard() {
                 <li onClick={() => setActiveTab("review")}><span><MdReviews/></span>Review</li>
                 <li onClick={() => setActiveTab("orders")}><span><FaFirstOrderAlt/></span>Orders</li>
                 <li onClick={() => setActiveTab("addcar")}><span><AiFillFileAdd/></span>Add Car</li>
-                <li onClick={() => setActiveTab("allorders")}><span><AiOutlineFolderView/></span>View All Orders</li>
                 <li onClick={() => setActiveTab("manageorders")}><span><AiOutlineFolderView/></span>Manage All Orders</li>
                 <li onClick={() => setActiveTab("message")}><span><AiFillMessage/></span>View all message</li>
                 {/* <li onClick={() => setActiveTab("message")}><span><AiFillMessage/></span>View all message</li> */}
@@ -54,6 +55,12 @@ export default function AdminDashboard() {
             }
             {
                 activeTab === "addcar" && <AddCar/>
+            }
+            {
+                activeTab === "message" && <Message/>
+            }
+            {
+                activeTab === "manageorders" && <Manageorders/>
             }
            
         </div>

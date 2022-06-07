@@ -6,7 +6,7 @@ import { Table } from 'react-bootstrap';
 import { Badge } from 'react-bootstrap';
 
 
-export default function Orders() {
+export default function Manageorders() {
   const [orders, setOrders] = useState([]);
     useEffect(()=>{
         fetch('http://localhost:8000/orders?email=${user.email}')
@@ -16,12 +16,12 @@ export default function Orders() {
 
   return (
     
-    <div className="table bg-light">
-        <h4 className=""><span><HiOutlineDesktopComputer/></span>Here Your Order</h4>
+    <div className="table">
+        <h2 className="p-2">Here Your Order</h2>
         
    
         <Table striped bordered hover>
-  <thead>
+  <thead className='bg-dark text-light'>
   <tr>
   <th>Car Name</th>
   <th>Price</th>

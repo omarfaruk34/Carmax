@@ -1,5 +1,6 @@
-
-import React from 'react';
+import axios from "axios";
+import React, { useState } from "react";
+// import { useParams } from "react-router-dom";
 import "./Contact.css";
 import {FaLocationArrow} from "react-icons/fa";
 import {AiFillPhone} from "react-icons/ai";
@@ -9,13 +10,34 @@ import {DiWebplatform} from "react-icons/di";
 
 
 export default function Contact() {
+  const [contact, setContact] = useState({
+    name :"",
+    email: "",
+    subject: "",
+    message: ""
+  });
+  const handleContact = (e) => {
+    setContact({
+      ...contact,
+      [e.target.name]: e.target.value
+    });
+  }
+  const handleContactSubmit = async(e) => {
+    e.preventDefault();
+    axios.post('http://localhost:8000/contact', contact)
+    .then(res=>{
+      console.log(res);
+      if(res.status === 200){
+        alert('Message Send');
+      }
+    })
+  }
   return (
       
              <section className="contact-area">
         <div className="contact-container">
             <div className="section-title">
                 <h2>Contact Us</h2>
-                <p>Lorem ipsum dolor sit. vitae eaque minima suscipit, rem odio exercitationem!</p>
             </div>
             <div className="contact">
                 <div className="contact-address">
@@ -37,11 +59,11 @@ export default function Contact() {
                       </div>
                 </div>
                 <div className="contact-form1">
-                    <form action="">
-                       <input type="text" placeholder="Your name"/>
-                       <input type="email" placeholder="Your email"/>
-                       <input type="text" placeholder="Your subject"/>
-                       <textarea name="" id="" placeholder="Message"/>
+                    <form onSubmit={handleContactSubmit}>
+                       <input className="form-control" type="text" name="name" placeholder="Your name" onChange={handleContact}/>
+                       <input className="form-control" type="email" name="email" placeholder="Your email" onChange={handleContact}/>
+                       <input className="form-control" type="text" name="subject" placeholder="Your subject" onChange={handleContact}/>
+                       <textarea className="form-control" name="message" id="" placeholder="Message" onChange={handleContact}/>
                        <input type="submit" value="send"/>
 
                     </form>

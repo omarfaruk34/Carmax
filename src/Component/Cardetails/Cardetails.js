@@ -18,7 +18,7 @@ const Cardetails = () => {
   }
   const handleReviewSubmit = async(e) => {
     e.preventDefault();
-    axios.post('http://localhost:5000/reviews', review)
+    axios.post('http://localhost:8000/reviews', review)
     .then(res=>{
       if(res.status === 200){
         alert('review done');
@@ -35,9 +35,13 @@ const Cardetails = () => {
   //   }
   // })
   const [orders, setOrder] = useState({
+    title: "",
+    price: "",
     name :"",
     email: "",
-    number: ""
+    number: "",
+    date: new Date(),
+    status: 'pending'
   });
   const handleOrder = (e) => {
     setOrder({
@@ -47,7 +51,7 @@ const Cardetails = () => {
   }
   const handleOrderSubmit = async(e) => {
     e.preventDefault();
-    axios.post('http://localhost:5000/orders', orders)
+    axios.post('http://localhost:8000/orders', orders)
     .then(res=>{
       console.log(res);
       if(res.status === 200){
@@ -91,6 +95,7 @@ const Cardetails = () => {
           <button>Add to Cart</button>
         </div>
         <form onSubmit={handleReviewSubmit}>
+        <input type="text" name="name" onChange={handleReview} placeholder="write your name" />
           <input type="text" name="review" onChange={handleReview} placeholder="write your opinion" />
           <input type="text" name="rating" onChange={handleReview} placeholder="rating" />
           <input type="submit" value="submit" />

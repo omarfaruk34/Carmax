@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import "./Reviewpost.css";
 import { Table } from 'react-bootstrap';
-import { Badge } from 'react-bootstrap';
-import {HiOutlineDesktopComputer} from "react-icons/hi";
+// import { Badge } from 'react-bootstrap';
+// import {HiOutlineDesktopComputer} from "react-icons/hi";
 
 
 export default function ReviewPost() {
+  const [review, setReview] = useState([]);
+  // const [items, setItems] = useState([]);
+    useEffect(()=>{
+        fetch('http://localhost:8000/reviews')
+        .then(res => res.json())
+        .then(data=> setReview(data));
+    },[]);
   return (
     <div className='row'>
        <div className="col-xl-12">
        
-       <div className="table bg-light">
-        <h4 className=""><span><HiOutlineDesktopComputer/></span>Dynamic Table</h4>
+       <div className="review-table">
+        <h2 className="p-2 my-2">All Review</h2>
         <div className="table-content">
           <div className="content1">
           <label>show 
@@ -32,93 +40,23 @@ export default function ReviewPost() {
   <tr>
       <th>#</th>
       <th>User Name</th>
-      <th>Car Name</th>
-      <th>Price</th>
-      <th>Quantity</th>
-      <th>Phone</th>
-      <th>Email</th>
-      <th>staus</th>
+      <th>Review</th>
+      <th>Rating</th>
     </tr>
   </thead>
-  <tbody>
+  {
+
+review.map(item=>
+  <tbody  key={item?._id}>
     <tr>
-      <td>1</td>
-      <td>Kaled</td>
-      <td>Corola</td>
-      <td>2000000/-</td>
-      <td>1</td>
-      <td>+88033 1343 1</td>
-      <td>kaled23@gmail.com</td>
-      <td><Badge bg="light" text="dark">
-      pending
-  </Badge>{' '}</td>
-    
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>157 admin</td>
-      <td>1 item</td>
-      <td>2000000/-</td>
-      <td>12-02-22</td>
-      
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>147 admin</td>
-      <td>1 item</td>
-      <td>2000000/-</td>
-      <td>12-02-22</td>
-      
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>147 admin</td>
-      <td>1 item</td>
-      <td>2000000/-</td>
-      <td>12-02-22</td>
-      
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>147 admin</td>
-      <td>1 item</td>
-      <td>2000000/-</td>
-      <td>12-02-22</td>
-      
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>147 admin</td>
-      <td>1 item</td>
-      <td>2000000/-</td>
-      <td>12-02-22</td>
-      
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>147 admin</td>
-      <td>1 item</td>
-      <td>2000000/-</td>
-      <td>12-02-22</td>
-      
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>147 admin</td>
-      <td>1 item</td>
-      <td>2000000/-</td>
-      <td>12-02-22</td>
-      
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>147 admin</td>
-      <td>1 item</td>
-      <td>2000000/-</td>
-      <td>12-02-22</td>
-      
-    </tr>
+   <td>1</td>
+   <td>{item?.name}</td>
+    <td>{item?.review}</td>
+      <td>{item?.rating}</td>
+      </tr>
   </tbody>
+)
+}
 </Table>
         </div>
        </div>

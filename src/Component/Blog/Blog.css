@@ -62,9 +62,9 @@
     font-weight: 600;
     padding: 10px 0;
   }
-  .blog .single-blog .blog-img{
+  /* .blog .single-blog .blog-img{
     background-image: url('../../../public/1.jpg');
-  }
+  } */
   .blog .single-blog p {
     font-size: 15px;
     font-weight: 400;

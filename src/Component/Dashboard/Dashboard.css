@@ -6,6 +6,10 @@
   font-size: 30px;
   font-weight: 600;
   font-family: 'Oleo Script', cursive;
+  padding: 10px 25px;
+}
+.welcome p{
+  padding: 10px 25px;
 }
 .portfolio-performance {
     background-color: #1abc9c;
@@ -23,10 +27,11 @@
   .portfolio-performance h2 {
 	font-size: 34px;
   color: #fff;
-	font-weight: 600;
+	font-weight: 700;
 	text-transform: capitalize;
-	margin-left: 30px;
-	margin-bottom: 30px;
+	/* margin-left: 30px; */
+	/* margin-bottom: 30px; */
+  padding: 10px 25px;
 }
 
 
@@ -124,6 +129,11 @@
 
   .table-content {
     display: flex;
+  }
+  .table h2{
+    background-color: #1abc9c;
+    color: #fff;
+    border-radius: 5px;
   }
   .table h4 span {
     font-size: 40px;

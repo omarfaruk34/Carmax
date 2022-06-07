@@ -16,7 +16,7 @@ const Review = () => {
 
    const [reviews, setReviews] = useState([]);
            useEffect(() => {
-               fetch('https://thawing-harbor-39490.herokuapp.com/reviews')
+               fetch('http://localhost:8000/reviews')
                    .then(res => res.json())
                    .then(data => setReviews(data))
            }, []);
@@ -76,7 +76,7 @@ const Review = () => {
             <p className='quote'><ImQuotesRight/></p>
             <p>{review.comment}</p>
             <div className="autor-info">
-                <img src={review.image}/>
+            <img src="https://i.ibb.co/qMjPVzt/joy.jpg" alt="" />
                 <h4>{review.name}<br/><span>Web Design</span></h4>
             </div>
         </div>
