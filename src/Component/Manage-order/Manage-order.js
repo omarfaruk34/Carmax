@@ -16,7 +16,7 @@ export default function Manageorders() {
 
   return (
     
-    <div className="table">
+    <div className="table my-2">
         <h2 className="p-2">Here Your Order</h2>
         
    
@@ -30,6 +30,7 @@ export default function Manageorders() {
       <th>Number</th>
       <th>Date</th>
       <th>Status</th>
+      <th>Action</th>
       {/* <th>Email</th>
       <th>staus</th> */}
     </tr>
@@ -47,7 +48,7 @@ orders.map(order=>
       <td><Badge bg="info" text="dark">
      { order?.status}
   </Badge></td>
-     
+  <td>Edit Delete</td>
     </tr>
 
   </tbody>

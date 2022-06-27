@@ -4,7 +4,7 @@ import Blog from '../Blog/Blog';
 import Cars from '../Cars/Cars';
 import Contact from '../Contact/Contact';
 import Cover from '../Cover/Cover-car';
-// import Democar from '../DemoCar/Democar';
+import Democar from '../DemoCar/Democar';
 import Faq from '../Faq/Faq';
 import Footer from '../Footer/Footer';
 import HeroSection from '../HeroSection/HeroSection';
@@ -19,9 +19,9 @@ const Home = () => {
             <HeroSection/>
             <Cars/>
             <Cover/>
+            <Democar/>
             <About/>
             <Stat_cont/>
-            {/* <Democar/> */}
             <Blog/>
             <Review/>
             <Team/>

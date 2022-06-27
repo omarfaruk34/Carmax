@@ -28,27 +28,46 @@
     background-size: cover;
     background-position: center;
 }
-.contact{
-    
+.footer-contact{
+    display: flex;
 }
 .shop-details{
     width: 550px;
     margin-right: 10px;
     
 }
+.shop-details p{
+    font-size: 16px;
+    color: #fff;
+}
 .contact-us{
    width: 250px;
 } 
+.contact-us ul li{
+   font-size: 16px;
+}
+.contact-us ul li:hover{
+    color: #fff;
+ }
+.about-us ul li a{
+    font-size: 18px;
+ }
 .about-us{
     width: 250px;
    
 }
+.about-us ul li:hover{
+    font-size: 18px;
+ }
 .support{
     width: 250px;
    
 }
-.copyright{
-
+.support ul li a{
+    font-size: 18px;
+}
+.support ul li:hover{
+    color: #fff;
 }
 hr{
     background-color: azure;
@@ -89,13 +108,13 @@ hr{
 /* Checking Size 1000px */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .footer{
-       width: 970px;
+       width: 992px;
     }
     .footer:before{
         width: 200px;
         height: 250px;
         right: 0;
-        top: 230px;
+        top: 182px;
     }
     .footer:after{
         width: 200px;
@@ -149,75 +168,56 @@ hr{
     
 }
 
-/* Tablet Layout: 768px. */
-/* Checking Size 800px */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
     .footer{
-     width: 750px;
+        width: 768px;
+       }
+    .footer::before {
+      width: 150px;
+      height: 150px;
+      top: 263px;
     }
-    .footer:before{
-        width: 200px;
-        height: 250px;
-        right: 0;
-        top: 230px;
+    .footer::after {
+ 
+      width: 150px;
     }
-    .footer:after{
-        width: 200px;
-        height: 150px;
-        left: 0;
-        top: 230px;
-    }
-    .contact{
-        
-    }
-    .shop-details{
-        width: 550px;
-        
-    }
-    .contact-us{
-       width: 200px;
-    } 
-    .about-us{
-        width: 200px;
-        margin-right: 10px;
-       
-    }
-    .support{
-        width: 200px;
-       
-    }
-    .copyright{
-    
-    }
-    hr{
-        width: 400px;
-    }
-    
-    .shop-details h1{
-        font-size: 22px;
-    }
-    .contact-us h1{
-        font-size: 22px;
-    }
-    .about-us h1{
-        font-size: 22px;
-    }
-    .support h1{
-        font-size: 22px;
-    }
-    .copyright p{
-       font-size: 15px;
-    }
-    
-}
+     .footer-contact{
+        display: grid;
+        grid-template-columns: auto auto;
+     }
+  }
+  
+
 
 /* Mobile Layout: 320px. */
 /* Checing Point: 400px */
 @media only screen and (max-width: 767px) {
     .footer{
-        width: 350px;
+        width: 320px;
     }
-    .footer:before{
+  .shop-details {
+    width: 260px;
+    margin-right: 0px;
+  }
+  
+  .footer-contact {
+    width: 320px;
+    display: grid;
+  }
+  
+    .footer:after{
+        width: 100px;
+        height: 100px;
+        left: 0;
+        top: 734px;  
+    }
+    .footer::before {
+        width: 100px;
+        height: 100px;
+        right: 0;
+        top: 473px;
+    }
+    /* .footer:before{
         width: 100px;
         height: 100px;
         right: 0;
@@ -268,77 +268,32 @@ hr{
     }
     .copyright p{
        font-size: 5px;
-    }
+    } */
 }
 
 /* Wide Mobile Layout: 480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .footer{
-        width: 450px;
-    }
-    .footer:before{
-        width: 100px;
-        height: 100px;
-        right: 0;
-        top: 170px;
-    }
-    .footer:after{
-        width: 100px;
-        height: 100px;
-        left: 0;
-        top: 170px;
-    }
-    .contact{
-        flex-basis: 20%;
-        justify-content: space-evenly;
+        width: 480px;
     }
    
-    .contact-us ul li{
-        font-size: 10px;   
-    
-    } 
-    .about-us ul li{
-        font-size: 10px;   
+    .footer-contact{
+        display: grid;
+        grid-template-columns: auto auto;
     }
-    .support ul li{
-        font-size: 10px;   
+    .shop-details {
+        width: auto;
     }
-    .shop-details{
-        width: 300px;
-        
+    .footer:after{
+        width: 130px;
+        height: 130px;
+        left: 0;
+        top: 404px;  
     }
-    .contact-us{
-       width: 250px;
-    } 
-    .about-us{
-        width: 250px;
-       
+    .footer::before {
+        width: 130px;
+        height: 130px;
+        right: 0;
+        top: 404px;
     }
-    .support{
-        width: 250px;
-       
-    }
-    .copyright{
-    
-    }
-    hr{
-        width: 200px;
-    }
-    
-    .shop-details h1{
-        font-size: 25px;
-    }
-    .contact-us h1{
-        font-size: 18px;
-    }
-    .about-us h1{
-        font-size: 18px;
-    }
-    .support h1{
-        font-size: 18px;
-    }
-    .copyright p{
-       font-size: 10px;
-    }
-    
 }

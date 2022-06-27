@@ -7,10 +7,10 @@
   }
   
 
-.logo{
+.nav-logo{
     font-weight: 700;
 }
-.logo a{
+.nav-logo a{
     text-decoration: none;
     color: #fff;
 }
@@ -97,7 +97,7 @@
 /* Checking Size 1000px */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
  .nav{
-     width: 972px;
+     width: 992px;
     
  }
  .logo{
@@ -124,11 +124,9 @@
 /* Checking Size 800px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .nav{
-        width: 750px;
-        
-       
+        width: 768px; 
     }
-    .logo{
+    .nav-logo{
         width: 750PX;
         text-align: center;
     }
@@ -160,40 +158,36 @@
         display: flex;
        
     }
-    .logobar{
+    .logobar {
         order: 1;
-        width: 90px;
-        
+        width: 43px;  
     }
     .logo{
         font-size: 22px;
         padding-right: 20px;
+    }
+    .nav-logo a {
+        font-size: 19px;
     }
     .navbar{
         order: 3;
         width: 320px;
         margin-bottom: 15px;
         justify-content: center;
-        background-color: #0a1520;
-        color: #fff;
+        /* background-color: #0a1520;
+        color: #fff; */
        }
-       .navbar ul{
-        flex-direction: column;
-        display: block;
-        text-align: center;
-        justify-content: center;
-        background-color: #fff;
-        width: 300px;
-        padding: 10px;
-        border-radius: 10px;
-       }
-       .navbar ul li{
-           margin-bottom: 5px;
-       }
-       .navbar ul li a{
-           font-size: 14px;
-    
-       }
+       .navbar ul {
+        flex-direction: row;
+      }
+      .navbar ul li {
+        margin-bottom: 0;
+        margin-right: 0px;
+        margin: -10px 0px;
+      }
+      .navbar ul li a {
+        font-size: 10px;
+      }
    .navbar ul li a:before{ 
            left: 0;
            bottom: 230px;
@@ -202,30 +196,25 @@
            bottom: -12px;
        }
        .navbtn{
-           width: 27%;
+           /* width: 27%; */
            order: 2;
        }
        .navbtn button{
            font-size: 10px;
            border-radius: 15px;
-       }
-}
+       } 
+  }
+  
 
 /* Wide Mobile Layout: 480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .nav{
-        width: 450px;
+        width: 480px;
         display: flex;
        
     }
-    .logobar{
+     .logobar{
         order: 1;
-        width: 110px;
-        
-    }
-    .logo{
-        font-size: 22px;
-        padding-right: 20px;
     }
     .navbar{
         order: 3;
@@ -235,35 +224,8 @@
         background-color: #0a1520;
         color: #fff;
        }
-       .navbar ul{
-        flex-direction: column;
-        display: block;
-        text-align: center;
-        justify-content: center;
-        background-color: #fff;
-        width: 300px;
-        padding: 10px;
-        border-radius: 10px;
-       }
-       .navbar ul li{
-           margin-bottom: 5px;
-           font-size: 14px;
-           text-decoration: none;
-       }
-      
-   .navbar ul li a:before{ 
-           left: 0;
-           bottom: 230px;
-       }
-       .navbar ul li a:hover:before{
-           bottom: -12px;
-       }
        .navbtn{
-           width: 27%;
-           order: 2;
-       }
-       .navbtn button{
-           font-size: 10px;
-           border-radius: 15px;
-       }
+        order: 2;
+    }
+   
 }

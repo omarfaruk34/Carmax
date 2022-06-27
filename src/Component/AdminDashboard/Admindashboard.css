@@ -3,7 +3,7 @@
 }
 .sidebar {
 	display: grid;
-	grid-template-columns: 20% 70%;
+	grid-template-columns: 20% 75%;
 	column-gap: 30px;
 }
 .side-nav ul li {

@@ -10,15 +10,50 @@ const Review = () => {
     dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 2,
-      slidesToScroll: 1
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            cssEase: "linear",
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 2,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            cssEase: "linear",
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            cssEase: "linear",
+          }
+        }
+      ]
            };
 
-   const [reviews, setReviews] = useState([]);
+   const [review, setReview] = useState([]);
            useEffect(() => {
                fetch('http://localhost:8000/reviews')
                    .then(res => res.json())
-                   .then(data => setReviews(data))
+                   .then(data => setReview(data))
            }, []);
               
     return (
@@ -69,15 +104,15 @@ const Review = () => {
         <h2>What Clients Says</h2>
     </div>
     <Slider {...settings}>
-    {reviews.map(review =>
-    <div className="testimonial" key={review._id}>
+    {review.map(item =>
+    <div className="testimonial" key={item?._id}>
     
         <div className="single-testimonial">
             <p className='quote'><ImQuotesRight/></p>
-            <p>{review.comment}</p>
+            <p>{item?.review}</p>
             <div className="autor-info">
-            <img src="https://i.ibb.co/qMjPVzt/joy.jpg" alt="" />
-                <h4>{review.name}<br/><span>Web Design</span></h4>
+            <img src="https://i.ibb.co/sgFyKzh/Cartoon-Pic-Ideas-for-DP-Profile-04.png" alt="" />
+                <h4>{item?.name}<br/><span>{item?.profession}</span></h4>
             </div>
         </div>
        

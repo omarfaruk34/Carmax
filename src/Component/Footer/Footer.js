@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <div className='footer d-flex'>
 
-             <div className="contact d-flex p-5">
+             <div className="footer-contact p-5">
                  <div className="shop-details text-muted">
                      <h1>Car<span className='text-danger'>Max</span></h1>
                      <p className=''>Choose from over 1 thousand cars in more than 200 countries, 1000
@@ -45,7 +45,7 @@ const Footer = () => {
 <hr />
 
              <div className="copyright text-center text-light p-3">
-                 <p>Copyright © 2021 CarMax.Designed By <br /><span className='text-danger'>Omar Faruk</span></p>
+                 <p>Copyright © 2021 CarMax.Designed By <br /><span className='text-danger'>Omar, Nishat & Khaled</span></p>
                  <p className='text-danger'>Term & Conditions <span className='text-light'>|</span> Privacy Policy</p>
              </div>
 				

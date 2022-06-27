@@ -114,9 +114,13 @@
     font-style: italic;
     color: #fff;
   }
-
+  .chart-text {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    }
 .chart {
   width: 800px;
+  margin-bottom: 40px;
 }
 
 .single-chart {
@@ -138,3 +142,28 @@
   .table h4 span {
     font-size: 40px;
   }
+
+
+.single-chart h4 {
+  color: #1abc9c;
+  padding: 10px 15px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.single-chart h3 {
+  padding: 10px 80px;
+  color: #333;
+  font-weight: 600;
+}
+
+.single-chart h3 span {
+  color: #e74c3c;
+}
+
+.dash-logo img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+  border: 4px solid #333;
+}

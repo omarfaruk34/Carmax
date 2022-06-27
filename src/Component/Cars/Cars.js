@@ -65,18 +65,18 @@ const Cars = () => {
     return (
         <div className="car-area">
             <div className='car'>
-                <h4 className='text-center text-danger pweight'>Popular Cars</h4>
-                <h2 className='car text-center text-dark h1weight'>Most <span className='text-danger'>Popular</span> Cars<br /> In Our Shop</h2>
+                <h4 className='text-center pweight'>Popular Cars</h4>
+                <h2 className='text-center text-dark h1weight'>Most <span className='text-danger'>Popular</span> Cars<br /> In Our Shop</h2>
                 <div className="car-search shadow">
-                    <h5 className='text-center fs-3 text-dark'>Find Car</h5>
+                    <h5 className='text-center fs-3 text-light'>Find Car</h5>
 
                     <form onSubmit={handleSubmit}>
                         <div className="form-contain row">
 
-                            <div className="col-xl-6 my-1 bg">
+                            <div className="col-xl-6 col-md-6 col-sm-6 my-1 bg">
                                 <input type="text" className='form-control' placeholder='Your Brand Name Here' onChange={e => setName(e.target.value)} />
                             </div>
-                            <div className="col-xl-6 my-1 bg">
+                            <div className="col-xl-6 col-md-6 col-sm-6 my-1 bg">
                                 <select className='p-1 form-select' name="" id="" onChange={e => setFuel(e.target.value)}>
                                     <option value="">Fuel Type</option>
                                     <option value="petrol">petrol</option>
@@ -84,7 +84,7 @@ const Cars = () => {
                                     <option value="cng">cng</option>
                                 </select>
                             </div>
-                            <div className="col-xl-6 my-1 bg">
+                            <div className="col-xl-6 col-md-6 col-sm-6 my-1 bg">
                                 <select className='p-1 form-select' name="" id="" onChange={e => setPriceFrom(e.target.value)}>
                                     <option value="">Search by Price from</option>
                                     <option value="50000">50000</option>
@@ -93,7 +93,7 @@ const Cars = () => {
                                 </select>
                                 {/* <input type="text" className='my-1 form-control' placeholder="Search by Price from" onChange={e=> setPriceFrom(e.target.value)}/> */}
                             </div>
-                            <div className="col-xl-6 my-1 bg">
+                            <div className="col-xl-6 col-md-6 col-sm-6 my-1 bg">
                                 <select className='p-1 form-select' name="" id="" onChange={e => setPriceTo(e.target.value)}>
                                     <option value="">Search by Price To</option>
                                     <option value="99999">99999</option>
@@ -111,7 +111,7 @@ const Cars = () => {
                 </div>
 
 
-                <div className='car-box d-flex flex-wrap'>
+                <div className='car-box'>
                     {
                         filterData?.map(item => <Car key={item.id} demo={item} />)
                         // cars?.map(item=>

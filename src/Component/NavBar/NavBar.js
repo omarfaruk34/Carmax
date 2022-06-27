@@ -7,7 +7,7 @@ const NavBar = () => {
     return (
         <div className='nav sticky-top'>
 				<div className="logobar">
-                    <h1 className='logo'><Link to={"/"}> <span className='text-danger'>Car</span><span className='text-light'>Max</span></Link></h1>
+                    <h1 className='nav-logo'><Link to={"/"}> <span className='text-danger'>Car</span><span className='text-light'>Max</span></Link></h1>
                    {/* <img src="\..\..\..\carmax-logo.png" alt="" /> */}
                 </div>
                 <div className="navbar">

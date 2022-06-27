@@ -32,7 +32,7 @@ export default function Team() {
                 </div>
             </div>
             <div className="single-team img-thumbnail" >
-            <img src="https://i.ibb.co/923y0pn/tumblr-0aeab73f09025ee97bc4b1301abaab67-406ce08f-540.jpg" alt="" />
+            <img src="https://i.ibb.co/sgFyKzh/Cartoon-Pic-Ideas-for-DP-Profile-04.png" alt="" />
                 <div className="team-content">
                     <h4>Humaira Akila Nishat <span>Web Devoloper</span></h4>
                     <div className="link">

@@ -111,30 +111,73 @@
   }
   
 
-/* Responsive code */
-/* Medium Layout: 1280px. */
-/* Checking Size 1000px */
-/*
+/* Responsive code 
+Medium Layout: 1280px.
+Checking Size 1000px */
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .form-container{
+    .contact-container {
         width: 970px;
-        padding: 30px 25px;     
-    }
-    .form-container::before{
-        width: 200px;
-        height: 230px;
-        right: 0;
-        top: 0;
-    }
-    .sub-btn input{ 
-        font-size: 20px;
-        padding: 15px 30px;
-    }
-    .sub-btn input:before{
     }
 
 }
-*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contact-container{
+        width: 750px;
+    }
+.contact .contact-address .single-address p {
+    margin-right: 17px;
+    width: 60px;
+    height: 50px;
+    line-height: 40px;
+    padding-left: 10px;
+  }
+  
+  .contact .contact-address .single-address h4 {
+    font-size: 25px;
+    line-height: 20px;
+  }
+  .single-address {
+    margin-bottom: 0;
+  }
+  
+}
+
+/* Mobile Layout: 320px. */
+/* Checing Point: 400px */
+@media only screen and (max-width: 767px) {
+.contact-container {
+    width: 320px;
+  }  
+  .contact {
+    grid-template-columns: 100%;
+  }
+  
+  .contact .contact-address .single-address p {
+    font-size: 30px;
+    margin-right: 19px;
+    height: 55px;
+    line-height: 44px;
+    padding-left: 20px;
+  }
+  
+  .contact .contact-address .single-address h4 {
+    font-size: 20px;
+    line-height: 18px;
+  }
+  .contact .contact-address {
+    grid-template-columns: auto;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+   .contact-container{
+    width: 450px;
+   }
+   .contact .contact-address {
+	grid-template-columns: auto;
+}
+}
+
 /* Tablet Layout: 768px. */
 /* Checking Size 800px */
 /*

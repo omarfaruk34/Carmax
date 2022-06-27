@@ -107,4 +107,52 @@
   .blog .single-blog .blog-img .img-content a {
     text-transform: lowercase;
   }
+  .single-blog h4{
+    font-family:'Oleo Script', cursive;
+  }
   
+
+/* Responsive code */
+/* Medium Layout: 1280px. */
+/* Checking Size 1000px */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .blog-container {
+    width: 970px;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-container {
+    width: 750px;
+  }
+  .blog {
+    grid-template-columns: auto;
+    row-gap: 20px;
+  }
+}
+
+/* Mobile Layout: 320px. */
+/* Checing Point: 400px */
+@media only screen and (max-width: 767px) {
+
+.blog-container {
+  width: 320px;
+}
+
+.blog {
+  grid-template-columns: 100%;
+  row-gap: 10px;
+}
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .blog-container {
+    width: 450px;
+  }
+  .blog {
+    grid-template-columns: auto;
+    row-gap: 20px;
+  }
+}
