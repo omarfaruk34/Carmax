@@ -81,6 +81,13 @@ export default function AddCar() {
                     </div>
                     <div className="col-xl-2 mr-2 p-3">
                     <input
+                        {...register("transmission")}
+                        placeholder="transmission"
+                        className="form-control"
+                    />
+                    </div>
+                    <div className="col-xl-2 mr-2 p-3">
+                    <input
                         {...register("fuel")}
                         placeholder="fuel"
                         className="form-control"
@@ -155,6 +162,34 @@ export default function AddCar() {
                     <input
                         {...register("features6")}
                         placeholder="features6"
+                        className="form-control"
+                    />
+                    </div>
+                    <div className="col-xl-2 mr-2 p-3">
+                    <input
+                        {...register("safety1")}
+                        placeholder="safety1"
+                        className="form-control"
+                    />
+                    </div>
+                    <div className="col-xl-2 mr-2 p-3">
+                    <input
+                        {...register("safety2")}
+                        placeholder="safety2"
+                        className="form-control"
+                    />
+                    </div>
+                    <div className="col-xl-2 mr-2 p-3">
+                    <input
+                        {...register("safety3")}
+                        placeholder="safety3"
+                        className="form-control"
+                    />
+                    </div>
+                    <div className="col-xl-2 mr-2 p-3">
+                    <input
+                        {...register("warranty")}
+                        placeholder="warranty"
                         className="form-control"
                     />
                     </div>

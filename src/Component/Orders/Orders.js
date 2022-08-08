@@ -36,7 +36,7 @@ export default function Orders() {
           orders.map(order =>
             <tbody key={order?._id}>
               <tr>
-                <td>{order?.title}</td>
+                <td>{order?.carName}</td>
                 <td>{order?.price}</td>
                 <td>{order?.name}</td>
                 <td>{order?.email}</td>

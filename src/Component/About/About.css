@@ -59,7 +59,7 @@
    width: 1200px;
    margin: auto;
 }
-/* .side-image{
+.side-image{
     background-image: url('../../../public/gtr.png');
     width: 530px;
     height: 270px;
@@ -68,7 +68,7 @@
     background-size: cover;
     background-position: center;
     
-} */
+}
 
 
 .content1_1{
@@ -82,6 +82,9 @@
 .content1_1 h1{
     font-weight: 700;
     font-size: 35px;
+}
+.content2 {
+	display: flex;
 }
 .content2_1{
    background-color: #fff;

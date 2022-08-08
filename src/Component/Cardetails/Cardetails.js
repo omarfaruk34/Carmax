@@ -5,12 +5,21 @@ import "./Cardetails.css"
 
 
 const Cardetails = () => {
+  const [matchedCar, setMatchedCar] = useState({})
+  const { carId } = useParams();
+  console.log(carId);
+  useEffect(() => {
+    fetch(`http://localhost:8000/addCar/${carId}`)
+      .then(res => res.json())
+      .then(data => setMatchedCar(data))
+  }, [carId]);
+
   const [review, setReview] = useState({
     review: "",
     rating: "",
     profession: ""
   });
-  console.log(new Date());
+
   const handleReview = (e) => {
     setReview({
       ...review,
@@ -26,18 +35,11 @@ const Cardetails = () => {
         }
       })
   }
-  // fetch('/url', {
-  //   method: "POST",
-  //   headers: {
-  //     "content-type": 'appliction/json',
-  //   },
-  //   body: {
-  //     JSON.stringify(review)
-  //   }
-  // })
+  console.log(matchedCar)
   const [orders, setOrder] = useState({
+    carName: matchedCar?.title,
     title: "",
-    price: "",
+    price: matchedCar?.price,
     name: "",
     email: "",
     number: "",
@@ -61,15 +63,7 @@ const Cardetails = () => {
       })
   }
 
-  const { carId } = useParams();
-  const [cars, setCars] = useState();
-  useEffect(() => {
-    fetch('/data/addcar.json')
-      .then(res => res.json())
-      .then(data => setCars(data))
-  }, []);
-  let matchedCar = cars?.find(car => car._id === carId);
-  console.log(carId);
+ 
 
   return (
     <div className='box'>
@@ -91,10 +85,6 @@ const Cardetails = () => {
                 <li>
                   <span>Model:: </span>
                   <span className='Specification-part'>{matchedCar?.Model}</span>
-                </li>
-                <li>
-                  <span>Base-Rate:: </span>
-                  <span className='Specification-part'>{matchedCar?.Rate}</span>
                 </li>
                 <li>
                   <span>per km:: </span>
@@ -144,32 +134,18 @@ const Cardetails = () => {
               <ul>
                 <li>{matchedCar?.features1}</li>
                 <li>{matchedCar?.features2}</li>
-                <li>{matchedCar?.features3}</li>
+              </ul>
+            </div>
+            <div className="features-list-part">
+              <ul>
+              <li>{matchedCar?.features3}</li>
                 <li>{matchedCar?.features4}</li>
-                <li>{matchedCar?.features5}</li>
+              </ul>
+            </div>
+            <div className="features-list-part">
+              <ul>
+              <li>{matchedCar?.features5}</li>
                 <li>{matchedCar?.features6}</li>
-              </ul>
-            </div>
-            <div className="features-list-part">
-              <ul>
-
-                <li>{matchedCar?.features7}</li>
-                <li>{matchedCar?.features8}</li>
-                <li>{matchedCar?.features9}</li>
-                <li>{matchedCar?.features10}</li>
-                <li>{matchedCar?.features11}</li>
-                <li>{matchedCar?.features12}</li>
-              </ul>
-            </div>
-            <div className="features-list-part">
-              <ul>
-
-                <li>{matchedCar?.features7}</li>
-                <li>{matchedCar?.features8}</li>
-                <li>{matchedCar?.features9}</li>
-                <li>{matchedCar?.features10}</li>
-                <li>{matchedCar?.features11}</li>
-                <li>{matchedCar?.features12}</li>
               </ul>
             </div>
           </div>
@@ -181,23 +157,16 @@ const Cardetails = () => {
             <div className="safety-list-part">
               <ul>
                 <li>{matchedCar?.safety1}</li>
+              </ul>
+            </div>
+            <div className="safety-list-part">
+              <ul>
                 <li>{matchedCar?.safety2}</li>
+              </ul>
+            </div>
+            <div className="safety-list-part">
+              <ul>
                 <li>{matchedCar?.safety3}</li>
-                <li>{matchedCar?.safety4}</li>
-              </ul>
-            </div>
-            <div className="safety-list-part">
-              <ul>
-                <li>{matchedCar?.safety5}</li>
-                <li>{matchedCar?.safety6}</li>
-                <li>{matchedCar?.safety7}</li>
-              </ul>
-            </div>
-            <div className="safety-list-part">
-              <ul>
-                <li>{matchedCar?.safety8}</li>
-                <li>{matchedCar?.safety9}</li>
-                <li>{matchedCar?.safety10}</li>
               </ul>
             </div>
 
@@ -207,7 +176,9 @@ const Cardetails = () => {
 
         <div className="warranty">
           <h4 className='middle-title'>Warranty</h4>
-          <p>{matchedCar?.warranty}</p>
+          <ul>
+                <li>{matchedCar?.warranty}</li>
+              </ul>
         </div>
       </div>
 

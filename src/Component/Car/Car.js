@@ -3,14 +3,14 @@ import {AiFillStar} from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const Car = (props) => {
-const {image,brand,title,price,rating, _id} = props.demo;
+const {image,brand,title,price,rating,transmission, _id} = props.demo;
     return(
         <div className=" car-item my-3 shadow"> 
                         
         
         <div className='image img-thumbnail'> <img className='' src={image} width="100%" alt="" />
         <div className='car-buton'>
-        <h3 className='logo'><Link to={`cars/${_id}`}>Explore Now</Link></h3>
+        <h3 className='logo'><Link to={`${_id}`}>Explore Now</Link></h3>
          </div>
         </div>
         <div className='car-content p-2 '>
@@ -25,7 +25,7 @@ const {image,brand,title,price,rating, _id} = props.demo;
          </div>
         <div className="bottom-detail">
         <p className=''>Rating: <AiFillStar /> {rating}</p>
-        <p>automatic</p>
+        <p>{transmission}</p>
         <p>26-11-21</p>
         </div>
         </div>

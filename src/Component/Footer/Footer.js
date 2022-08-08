@@ -3,6 +3,8 @@ import "./Footer.css"
 import {BsFillPhoneFill} from "react-icons/bs"
 import {AiTwotoneMail} from "react-icons/ai"
 import {FaLocationArrow} from "react-icons/fa"
+import { Link } from 'react-router-dom';
+
 
 
 const Footer = () => {
@@ -26,9 +28,9 @@ const Footer = () => {
                  <div className="about-us text-light">
                      <h1>About <span className='text-danger'>Us</span></h1>
                          <ul className='list-unstyled'>
-                             <li className='my-1'><a className='text-decoration-none text-muted' href="">Cars</a></li>
-                             <li className='my-1'><a className='text-decoration-none text-muted'  href="">About</a></li>
-                             <li><a  className='text-decoration-none text-muted' href="">Contact</a></li>
+                             <li className='my-1 text-decoration-none demo'><Link to={"/cars"}>Cars</Link></li>
+                             <li className='my-1 text-decoration-none demo'><Link to={"/about"}>About</Link></li>
+                             <li className='my-1 text-decoration-none demo'><Link to={"/contact"}>Contact</Link></li>
                          </ul>
                  </div>
                  <div className="support text-light">
