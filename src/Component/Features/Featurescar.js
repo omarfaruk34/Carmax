@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { AiFillStar } from "react-icons/ai";
 import { Link } from 'react-router-dom';
 import Slider from "react-slick";
-import "./Democar.css"
+import "./Featurecar.css"
 
-const Democar = () => {
+const Featurecar = () => {
   const [cars, setCars] = useState();
   const settings = {
-    dots: false,
+    dots:false,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 1500,
@@ -60,10 +60,9 @@ const Democar = () => {
 
   return (
     <div className="latest-car-area">
-
       <div className='latest-car'>
         <div className="section-title">
-          <h2 className='text-dark'>Upcoming Car</h2>
+          <h2 className='text-dark'>Features Car</h2>
         </div>
         <div className='latest-car-box shadow'>
           <Slider {...settings}>
@@ -80,7 +79,7 @@ const Democar = () => {
                       <p className=''>BDT {item?.price}</p>
                     </div>
                     <div className=''>
-                      <p></p>
+                      <Link to={`cars/${item?._id}`}>  <button className='btn btn-danger'>Book Now</button></Link>
                     </div>
                   </div>
 
@@ -90,6 +89,9 @@ const Democar = () => {
           </Slider>
         </div>
       </div>
+      
+
+     
 
     </div>
 
@@ -97,4 +99,4 @@ const Democar = () => {
   );
 };
 
-export default Democar;
+export default Featurecar;
