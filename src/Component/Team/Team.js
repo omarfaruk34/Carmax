@@ -1,7 +1,4 @@
 import React from 'react';
-import {BsFacebook} from "react-icons/bs";
-import {FiInstagram} from "react-icons/fi";
-import {AiFillLinkedin} from "react-icons/ai";
 import "./Team.css"
 
 

@@ -1,6 +1,5 @@
-// import React from 'react';
+
 import React, { useEffect, useState } from 'react';
-import { HiOutlineDesktopComputer } from "react-icons/hi";
 import "./Order.css"
 import { Table } from 'react-bootstrap';
 import { Badge } from 'react-bootstrap';

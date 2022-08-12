@@ -3,8 +3,6 @@ import React, { useEffect, useState } from 'react';
 import Slider from "react-slick";
 import "./Review.css";
 import {ImQuotesRight} from "react-icons/im"
-import {AiFillStar} from "react-icons/ai"
-import {AiOutlineStar} from "react-icons/ai"
 const Review = () => {
   const settings = {
     dots: true,
