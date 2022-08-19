@@ -38,7 +38,8 @@ import "./Navbar.css";
 const NavBar = () => {
   return (
   
-   
+   <div className='nav-area'>
+    <div className='nav-container'>
     <Navbar bg="dark" expand="lg" variant='dark'>
       <Container fluid>
 
@@ -70,37 +71,11 @@ const NavBar = () => {
     </Navbar>
     
 
-  
+    </div>
+   </div>
    
-
-  //   <Navbar bg="dark" expand="lg" variant="dark">
-  //   <Container fluid>
-  //   <Navbar.Brand href="#" className='text-danger fs-1 fw-bolder mx-5'>Car<span className='text-light'>Max</span></Navbar.Brand>
-  //     <Navbar.Toggle aria-controls="navbarScroll" />
-  //     <Navbar.Collapse id="navbarScroll">
-  //       <Nav
-  //         className="me-auto my-2 my-lg-0"
-  //         style={{ maxHeight: '100px' }}
-  //         navbarScroll
-  //       >
-  //          <Nav.Link as={NavLink} to="/" className='text-light fw-bold fs-5 '>Home</Nav.Link>
-  //            <Nav.Link as={NavLink} to="/cars" className='text-light fw-bold fs-5 '>Cars</Nav.Link>
-  //            <Nav.Link as={NavLink} to="/about" className='text-light fw-bold fs-5'>About-Us</Nav.Link>
-  //            <Nav.Link as={NavLink} to="/blog" className='text-light fw-bold fs-5'>Blog</Nav.Link>
-  //            <Nav.Link as={NavLink} to="/contact" className='text-light fw-bold fs-5'>Contact-Us</Nav.Link>
-  //       </Nav>
-  //       <Form className="d-flex">
-  //         <Form.Control
-  //           type="search"
-  //           placeholder="Search"
-  //           className="me-2"
-  //           aria-label="Search"
-  //         />
-  //         <Button variant="outline-success">Search</Button>
-  //       </Form>
-  //     </Navbar.Collapse>
-  //   </Container>
-  // </Navbar>
+  
+ 
   );
 };
 
