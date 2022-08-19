@@ -109,7 +109,7 @@ const Review = () => {
             <p className='quote'><ImQuotesRight/></p>
             <p>{item?.review}</p>
             <div className="autor-info">
-            <img src="https://i.ibb.co/sgFyKzh/Cartoon-Pic-Ideas-for-DP-Profile-04.png" alt="" />
+            <img src="https://i.ibb.co/zxpPRmC/review-character-shows-assess-reviewing-evaluate-reviews-showing-34211637.jpg" alt="" />
                 <h4>{item?.name}<br/><span>{item?.profession}</span></h4>
             </div>
         </div>

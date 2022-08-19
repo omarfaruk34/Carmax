@@ -9,6 +9,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Link,
   NavLink
 } from "react-router-dom";
 import "./Navbar.css";
@@ -36,7 +37,8 @@ import "./Navbar.css";
 // </div>
 const NavBar = () => {
   return (
-
+  
+   
     <Navbar bg="dark" expand="lg" variant='dark'>
       <Container fluid>
 
@@ -56,13 +58,20 @@ const NavBar = () => {
 
           </Nav>
 
-          
+{/*           
           <Button variant="outline-info fw-bold mx-2">DASHBOARD</Button>
-          <Button variant="outline-danger fw-bold mx-2">Login</Button>
+          <Button variant="outline-danger fw-bold mx-2">Login</Button> */}
+
+          <Link to="/admin"> <Button variant="outline-info fw-bold mx-2">DASHBOARD</Button></Link>
+          <Link to="/login"> <Button variant="outline-danger fw-bold mx-2">Login</Button></Link>
 
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    
+
+  
+   
 
   //   <Navbar bg="dark" expand="lg" variant="dark">
   //   <Container fluid>
