@@ -2,7 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import Slider from "react-slick";
 import "./Review.css";
-import {ImQuotesRight} from "react-icons/im"
+import {ImQuotesRight} from "react-icons/im";
+import { DynamicStar } from 'react-dynamic-star';
 const Review = () => {
   const settings = {
     dots: true,
@@ -107,7 +108,7 @@ const Review = () => {
     
         <div className="single-testimonial">
             <p className='quote'><ImQuotesRight/></p>
-            <p>{item?.review}</p>
+            <p><DynamicStar rating={4.5} />{item?.review}</p>
             <div className="autor-info">
             <img src="https://i.ibb.co/zxpPRmC/review-character-shows-assess-reviewing-evaluate-reviews-showing-34211637.jpg" alt="" />
                 <h4>{item?.name}<br/><span>{item?.profession}</span></h4>

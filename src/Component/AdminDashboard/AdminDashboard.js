@@ -24,11 +24,12 @@ export default function AdminDashboard() {
     return (
         <div className='admin-dashboard'>
             <div className='sidebar'>
-                <div className='side-nav' style={{ backgroundColor: "#333" }}>
-                    <div className="logobar">
+                <div className='side-nav' >
+                    {/* <div className="logobar">
+                    style={{ backgroundColor: "#333" }}
                         <h1 className='mx-3 pt-2 logo'><Link to={"/"}> <span className='text-danger'>Car</span><span className='text-light'>Max</span></Link></h1>
-                        {/* <img src="\..\..\..\carmax-logo.png" alt="" /> */}
-                    </div>
+                        <img src="\..\..\..\carmax-logo.png" alt="" />
+                    </div> */}
                     <ul className='text-light list-unstyled'>
                         <li className='' onClick={() => setActiveTab("dashboard")}><span><MdOutlineDashboard /></span>Dashboard</li>
                         <li className='' onClick={() => setActiveTab("payment")}><span><MdPayment /></span>Payment</li>
@@ -37,7 +38,6 @@ export default function AdminDashboard() {
                         <li onClick={() => setActiveTab("addcar")}><span><AiFillFileAdd /></span>Add Car</li>
                         <li onClick={() => setActiveTab("manageorders")}><span><AiOutlineFolderView /></span>Manage All Orders</li>
                         <li onClick={() => setActiveTab("message")}><span><AiFillMessage /></span>View all message <span className="badge bg-danger mx-1 fs-5">4</span></li>
-                        {/* <li onClick={() => setActiveTab("message")}><span><AiFillMessage/></span>View all message</li> */}
                     </ul>
                 </div>
                 <div className='side-content'>

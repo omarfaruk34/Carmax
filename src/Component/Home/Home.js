@@ -17,6 +17,7 @@ import Team from '../Team/Team';
 
 
 
+
 const Home = () => {
     return(
         <div>

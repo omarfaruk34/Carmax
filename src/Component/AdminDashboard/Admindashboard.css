@@ -6,12 +6,37 @@
 	grid-template-columns: 20% 75%;
 	column-gap: 30px;
 }
+.side-nav{
+    background-color: #333;
+    /* height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 60px;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px; */
+}
+.side-nav ul{
+    /* height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 60px;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px; */
+  
+}
 .side-nav ul li {
     font-size: 16px;
     font-weight: 600;
     padding: 10px 17px;
     cursor: pointer;
     transition: .3s;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    display: block;
     }
     .side-nav ul li span {
         font-size: 28px;
@@ -20,3 +45,41 @@
     .side-nav ul li:hover {
     color: brown;
     }
+
+
+
+
+     
+
+/* Responsive code */
+/* Medium Layout: 1280px. */
+/* Checking Size 1000px */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+   
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+        
+  }
+  
+  /* Mobile Layout: 320px. */
+  /* Checing Point: 400px */
+  @media only screen and (max-width: 767px) {
+    .sidebar {
+        column-gap: 10px;
+    }
+    .side-nav ul li {
+        font-size: 10px;
+        font-weight: 700;
+    }
+    .side-nav ul li span {
+        font-size: 20px;
+        display: block;
+    }
+  
+  
+  }
+  
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+   
+  }

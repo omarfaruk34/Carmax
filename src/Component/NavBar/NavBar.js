@@ -43,7 +43,7 @@ const NavBar = () => {
     <Navbar bg="dark" expand="lg" variant='dark'>
       <Container fluid>
 
-        <Navbar.Brand href="#" className='text-danger fs-2 fw-bolder mx-5'>Car<span className='text-light'>Max</span></Navbar.Brand>
+        <Navbar.Brand href="#" className='text-danger fs-2 fw-bolder'>Car<span className='text-light'>Max</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" className='text-light' />
         <Navbar.Collapse id="navbarScroll">
           <Nav

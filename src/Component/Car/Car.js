@@ -3,7 +3,7 @@ import {AiFillStar} from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const Car = (props) => {
-const {image,brand,title,price,rating,transmission, _id} = props.demo;
+const {image,brand,title,price,rating,fuel, _id} = props.demo;
     return(
         <div className=" car-item my-3 shadow"> 
                         
@@ -25,7 +25,7 @@ const {image,brand,title,price,rating,transmission, _id} = props.demo;
          </div>
         <div className="bottom-detail">
         <p className=''>Rating: <AiFillStar /> {rating}</p>
-        <p>{transmission}</p>
+        <p>{fuel}</p>
         <p>26-11-21</p>
         </div>
         </div>
